@@ -1,0 +1,7 @@
+/*CIT 261 - Assignmet Portal CSS Template*/
+
+header, footer {
+    text-align: center;
+    background-color: darkgreen;
+    color: ghostwhite;
+}
