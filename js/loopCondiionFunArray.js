@@ -21,7 +21,7 @@ for (var counter = start ; counter <= end; counter++)
     }
  document.getElementById('output').innerHTML = output
 
-
+}
 
 
 
@@ -76,5 +76,4 @@ function reverseList(theList){
 	return retval;
 }
 
- }
 
