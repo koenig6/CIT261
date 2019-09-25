@@ -44,7 +44,7 @@ for (var counter = start ; counter <= end; counter++)
 
     for(var i = 0; i < size; i++)
         {
-            theList.push(prompt"Enter a number");
+            theList.push(prompt("Enter a number"));
 
         }
 
