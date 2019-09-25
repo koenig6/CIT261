@@ -31,7 +31,3 @@ tr:nth-child(odd){
   background-color: darkseagreen;
 }
 
-tr:hover {
-    background-color: darkblue;
-    color: azure;
-}
