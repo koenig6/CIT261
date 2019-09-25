@@ -38,8 +38,7 @@ for (var counter = start ; counter <= end; counter++)
 
 
     function switchItup(){
-	var size = parseInt(document.getElementById("sizeOf").value
-);
+	var size = parseInt(document.getElementById("sizeArray").value);
 
     var theList = [];
 
