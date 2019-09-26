@@ -45,21 +45,23 @@ document.getElementById('outputDiv').innerHTML = output;
 /*Function and switch*/
 
 function knowYou(){
-    var lastName = document.getElementById('name').value);
+    var lastName = document.getElementById('name').value;
     var letter = lastName.charAt(0);
     var reply;
 
     switch(letter){
 
         case a:
-            reply = "Oh ya, we had a class together!"
+            reply = "Oh ya, we had a class together!";
             break;
         case b:
-            reply = "Nice to meet you again!"
+            reply = "Nice to meet you again!";
             break;
         case c:
-            reply = "No, I don't think we have met before."
-
+            reply = "No, I don't think we have met before.";
     }
+
     document.getElementById("outputDiv").innerHTML = reply;
-}
+    }
+
+
