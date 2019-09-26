@@ -61,5 +61,5 @@ function knowYou(){
             reply = "No, I don't think we have met before."
 
     }
-    document.getElementById("name").innerHTML = reply;
+    document.getElementById("outputDiv").innerHTML = reply;
 }
