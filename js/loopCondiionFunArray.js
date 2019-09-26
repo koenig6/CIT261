@@ -1,3 +1,5 @@
+/*Function and if else statement*/
+
 function evenlyDivisible (){
  var start = parseInt(document.getElementById("start").value);
  var end = parseInt(document.getElementById("end").value);
@@ -16,64 +18,48 @@ for (var counter = start ; counter <= end; counter++)
        {
 		  output = "No numbers are divisible by your divisor.";
 	   }
-
-
     }
  document.getElementById('output').innerHTML = output
-
 }
 
 
+/*Function and array*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-    function switchItup(){
-	var size = parseInt(document.getElementById("sizeArray").value);
+function switchItup(){
+    var size = parseInt(document.getElementById("sizeArray").value);
 
     var theList = [];
 
     for(var i = 0; i < size; i++)
         {
             theList.push(prompt("Enter a number"));
-
         }
 
+var output = "Your numbers flipped will be " + reverseList(theList);
 
-/*var theList = [1, 4, 2, 7, 9];*/
-
-	var output = "Your numbers flipped will be " + reverseList(theList);
-
-  document.getElementById('outputDiv').innerHTML = output;
+document.getElementById('outputDiv').innerHTML = output;
 
 }
 
 
+/*Function and switch*/
 
-function reverseList(theList){
+function knowYou(){
+    var lastName = document.getElementById('name').value);
+    var letter = lastName.charAt(0);
+    var reply;
 
-	var retval = [];
+    switch(letter){
 
-	for (move = theList.length-1; move >= 0; move--)
-	{
-		retval.push (theList [move]);
-		{
-		output = move;
-		}
+        case a:
+            reply = "Oh ya, we had a class together!"
+            break;
+        case b:
+            reply = "Nice to meet you again!"
+            break;
+        case c:
+            reply = "No, I don't think we have met before."
 
-	}
-	//this makes the first number the last number
-	//var swop = theList[0] = theList[theList.length -1];
-	return retval;
+    }
+    document.getElementById("name").innerHTML = reply;
 }
-
-
