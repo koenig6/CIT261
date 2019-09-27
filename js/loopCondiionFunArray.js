@@ -139,6 +139,8 @@ function knowYou(){
         case "r":
             reply = "I think we have met before.";
             break;
+        default:
+            reply = "Is that really your last name?";
 
     }
 
