@@ -51,13 +51,13 @@ function knowYou(){
 
     switch(letter){
 
-        case a:
+        case "a":
             reply = "Oh ya, we had a class together!";
             break;
-        case b:
+        case "b":
             reply = "Nice to meet you again!";
             break;
-        case c:
+        case "c":
             reply = "No, I don't think we have met before.";
     }
 
