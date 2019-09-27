@@ -16,7 +16,7 @@ for (var counter = start ; counter <= end; counter++)
 
         else if (((counter % divisor) != 0) && (counter != end))
         {
-            counter++;
+
         }
 
 	   else
