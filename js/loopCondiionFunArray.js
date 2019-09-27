@@ -23,6 +23,10 @@ for (var counter = start ; counter <= end; counter++)
 }
 
 
+
+
+
+
 /*Function and array*/
 
 function switchItup(){
@@ -40,6 +44,32 @@ var output = "Your numbers flipped will be " + reverseList(theList);
 document.getElementById('outputDiv').innerHTML = output;
 
 }
+function reverseList(theList){
+	// Reverses the contents of the specified array.
+
+    var left = 0;
+    var right = theList.length - 1;
+
+    while (left < right) {
+        // Exchange two elements.
+        var swap = theList[left];
+        theList[left] = theList[right];
+        theList[right] = swap;
+
+        // Move the indexes toward the center.
+        left++;
+        right--;
+    }
+return theList;
+
+}
+
+
+
+
+
+
+
 
 
 /*Function and switch*/
