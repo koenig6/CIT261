@@ -88,41 +88,57 @@ return theList;
 
 function knowYou(){
     var lastName = document.getElementById('name').value;
+    lastName.toLocaleLowerCase();
     var letter = lastName.charAt(0);
     var reply;
 
     switch(letter){
 
-        case "a" || "z":
+        case "a":
+        case "z":
+        case "q":
             reply = "Oh ya, we had a class together!";
             break;
         case "b":
+        case "y":
+        case "p":
             reply = "Nice to meet you again!";
             break;
         case "c":
+        case "x":
+        case "o":
             reply = "No, I don't think we have met before.";
             break;
         case "d":
+        case "w":
+        case "n":
             reply = "I know your sister! How is she doing?";
             break;
         case "e":
+        case "v":
+        case "m":
             reply = "Oh, I must be mistaken.";
             break;
         case "f":
+        case "u":
+        case "l":
             reply = "You remind me of someone I once knew.";
             break;
         case "g":
+        case "t":
+        case "k":
             reply = "I guess you just have a familiar face.";
             break;
         case "h":
-            reply = "Are you related to the" + lastName + "'s who are from Atlanta?";
+        case "s":
+        case "j":
+            reply = "Are you related to the " + lastName + "'s who are from Atlanta?";
             break;
         case "i":
+        case "r":
             reply = "I think we have met before.";
             break;
-        case "j":
-            reply = "";
-            break;
+
     }
 
     document.getElementById("outputDiv").innerHTML = reply;
