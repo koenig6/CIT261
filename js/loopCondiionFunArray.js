@@ -14,12 +14,17 @@ for (var counter = start ; counter <= end; counter++)
 		      output += counter + " ";
 	       }
 
+        else if (((counter % divisor) != 0) && (counter != end))
+        {
+            counter++;
+        }
+
 	   else
        {
 		  output = "No numbers are divisible by your divisor.";
 	   }
-    }
- document.getElementById('output').innerHTML = output
+
+ document.getElementById('output').innerHTML = output;
 }
 
 
