@@ -36,10 +36,6 @@ for (var counter = start ; counter <= end; counter++)
 }
 
 
-
-
-
-
 /*Function and array*/
 
 function switchItup(){
@@ -76,13 +72,6 @@ function reverseList(theList){
 return theList;
 
 }
-
-
-
-
-
-
-
 
 
 /*Function and switch*/
