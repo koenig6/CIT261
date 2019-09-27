@@ -93,7 +93,7 @@ function knowYou(){
 
     switch(letter){
 
-        case "a":
+        case "a" || "z":
             reply = "Oh ya, we had a class together!";
             break;
         case "b":
@@ -101,6 +101,28 @@ function knowYou(){
             break;
         case "c":
             reply = "No, I don't think we have met before.";
+            break;
+        case "d":
+            reply = "I know your sister! How is she doing?";
+            break;
+        case "e":
+            reply = "Oh, I must be mistaken.";
+            break;
+        case "f":
+            reply = "You remind me of someone I once knew.";
+            break;
+        case "g":
+            reply = "I guess you just have a familiar face.";
+            break;
+        case "h":
+            reply = "Are you related to the" + lastName + "'s who are from Atlanta?";
+            break;
+        case "i":
+            reply = "I think we have met before.";
+            break;
+        case "j":
+            reply = "";
+            break;
     }
 
     document.getElementById("outputDiv").innerHTML = reply;
