@@ -1,6 +1,7 @@
 /*Function and if else statement*/
 
-function evenlyDivisible (){
+function evenlyDivisible ()
+{
  var start = parseInt(document.getElementById("start").value);
  var end = parseInt(document.getElementById("end").value);
  var divisor = parseInt(document.getElementById("divisor").value);
@@ -21,11 +22,16 @@ for (var counter = start ; counter <= end; counter++)
 
 	   else
        {
-		  output = "No numbers are divisible by your divisor.";
+           if(output == "")
+               {
+                    output = "No numbers are divisible by your divisor.";
+               }
+           else
+               {
+                   document.getElementById('output').innerHTML = output;
+               }
 	   }
-
- document.getElementById('output').innerHTML = output;
-}
+    }
 }
 
 
