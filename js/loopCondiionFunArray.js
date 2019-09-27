@@ -88,8 +88,8 @@ return theList;
 
 function knowYou(){
     var lastName = document.getElementById('name').value;
-    lastName.toLowerCase();
-    var letter = lastName.charAt(0);
+    var lowerLastName = lastName.toLowerCase();
+    var letter = lowerLastName.charAt(0);
     var reply;
 
     switch(letter){
