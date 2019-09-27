@@ -141,7 +141,7 @@ function knowYou(){
 
     }
 
-    document.getElementById("outputDiv").innerHTML = reply;
+    document.getElementById("outputDiv2").innerHTML = reply;
     }
 
 
