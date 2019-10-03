@@ -1,0 +1,83 @@
+/*CIT 261 - CSS Template*/
+
+header, nav, main, body{
+    max-width: 1400px;
+    margin: auto; /*centers on page*/
+}
+
+nav{
+    margin: 0 auto;
+    width: 300px;
+    clear: both;
+    padding-top: 50px;
+    }
+
+nav ul {
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li{
+    display: inline; /*makes words horizontal since default is verticle*/
+    float: left; /*gets the blocks to float next to each other*/
+    background-color: #3AAFA9;
+    color: #FEFFFF;
+}
+nav ul li {
+    display: block;
+    text-align: center; /*centers text to middle of li element*/
+}
+nav ul li a {
+    display: block;/*makes whole link a box to click not just the word*/
+    padding: 10px 10px;
+    width: 128px;  /* makes link boxes larger to that they are centered*/
+    font-size: 85%;
+    text-decoration: none; /*removes line under link*/
+}
+nav ul li a:hover {
+    background-color: #FEFFFF; /*when mouse is on nav link it will be this color*/
+    color: #17252A;
+}
+nav ul li.active a {
+    background-color: #17252A; /*makes current page link blue*/
+    color: #FEFFFF;
+}
+
+#media{
+    background-size: cover;/*scale the img to be as large as possible*/
+    background-position: center;
+    background-image: url(/img/zoo2.PNG);
+    background-attachment: fixed;
+}
+
+h1 {
+    text-align: center;
+    background-color: darkgreen;
+    color: ghostwhite;
+    font-size: 40px;
+}
+
+table {
+    width: 70%;
+    margin: auto;
+}
+
+caption {
+    padding-bottom: 15px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+thead {
+    border: 5px solid black;
+}
+
+th,tr,td {
+    text-align: left;
+    padding: 5px
+}
+
+tr:nth-child(odd){
+  background-color: darkseagreen;
+}
