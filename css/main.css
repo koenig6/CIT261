@@ -45,11 +45,11 @@ nav ul li.active a {
 }
 
 #media{
-
-    background-image: url(/img/zoo2.png);
     background-size: cover;/*scale the img to be as large as possible*/
     background-position: center;
     background-attachment: fixed;
+    background-image: url(/img/zoo2.png);
+
 }
 
 h1 {
