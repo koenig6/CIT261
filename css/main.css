@@ -65,7 +65,11 @@ audio{
     position: relative;
     right: 150px;
     top: 200px;
+}
 
+#llama{
+    position: relative;
+    right: 200px;
 }
 
 h1 {
