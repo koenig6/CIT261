@@ -44,6 +44,13 @@ nav ul li.active a {
     color: #FEFFFF;
 }
 
+#media{
+    background-image: url(/img/zoo.PNG);
+    background-size: cover;/*scale the img to be as large as possible*/
+    background-position: center;
+    background-attachment: fixed;
+}
+
 h1 {
     text-align: center;
     background-color: darkgreen;
