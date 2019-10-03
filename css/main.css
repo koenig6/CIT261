@@ -51,6 +51,10 @@ nav ul li.active a {
     background-attachment: fixed;
 }
 
+audio{
+    width: 200px;
+}
+
 h1 {
     text-align: center;
     background-color: darkgreen;
