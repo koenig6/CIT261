@@ -57,19 +57,19 @@ audio{
 
 #horse{
     position: relative;
-    left: 150px;
+    left: 160px;
     /*top: 75px;*/
 }
 
 #pig{
     position: relative;
-    left: 500px;
-    /*top: 200px;*/
+    left: 600px;
+    top: 200px;
 }
 
 #llama{
     position: relative;
-    left: 200px;
+    left: 600px;
 }
 
 h1 {
