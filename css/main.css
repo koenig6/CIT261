@@ -58,13 +58,13 @@ audio{
 #horse{
     position: relative;
     left: 160px;
-    bottom: 80px;
 }
 
 #parrot{
     position: relative;
-    left: 675px;
-    bottom: auto;
+    left: 475px;
+    top: 370px
+
 }
 
 #pig{
@@ -80,7 +80,8 @@ audio{
 
 #myCanvas{
     position: relative;
-    bottom: auto;
+    top: 500px;
+    right: 250px;
 }
 h1 {
     font-size: 40px;
