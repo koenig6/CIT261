@@ -15,12 +15,15 @@
             </ul>
         </nav>
         <main>
+            <canvas id="canvas" width=600 height=175></canvas>
 
-            <div id="food">
+            <div id="love">
 
                 <h2>Find out your love compatibility!</h2>
-                 <input type=text id=yourName size="5">
-                <input type=text id=theirName size="5">
+                 <input type=text id=fName size="5"><br><br>
+                <input type=text id=sName size="5">
+                <p>Percentage: <span id=percent></span>%</p>
+                <p><span id=result></span></p>
 
 
             </div>
@@ -29,7 +32,8 @@
 
 
         </main>
-        <script src=""></script>
+        <script src="js/jsObject.js"></script>
+        <script src="js/ajax.js"></script>
 
     </body>
 </html>
