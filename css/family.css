@@ -48,6 +48,14 @@ nav ul li.active a {
     color: #FEFFFF;
 }
 
+#media{
+    background-size: cover;/*scale the img to be as large as possible*/
+    background-position: center;
+    background-image: url("/CIT261/img/pool.jpg");
+    background-attachment: fixed;
+    opacity: 0.5;
+}
+
 h1, h2 {
     font-family: 'Faster One', cursive;
 }
