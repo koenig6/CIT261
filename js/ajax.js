@@ -2,7 +2,9 @@ var data = null;
 
 var loveObject = new XMLHttpRequest();
 
-loveObject.open("GET", "https://love-calculator.p.rapidapi.com/getPercentage?fname=John&sname=Alice");
+loveObject.withCredentials = true;
+
+loveObject.open("GET", "https://love-calculator.p.rapidapi.com/getPercentage?fname=John&sname=Alice&apiKey=ApIKey");
 
 loveObject.send(data);
 
