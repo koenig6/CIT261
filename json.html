@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <title>My Family</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+
+        <header>
+
+        </header>
+
+        <section>
+
+        </section>
+
+        <script>
+            var header = document.querySelector('header');
+            var section = document.querySelector('section');
+            var requestURL = 'https://koenig6.github.io/CIT261/json/famHist.json';
+            var request = new XMLHttpRequest();
+            request.open('GET', requestURL);
+            request.responseType = 'json';
+            request.send();
+            request.onload = function() {
+                var familyMembers = request.response;
+                populateHeader(familyMembers);
+                showFamily(familyMembers);
+            }
+            function populateHeader(jsonObj) {
+                var myH1 = document.createElement('h1');
+                myH1.textContent = jsonObj['familyName'];
+                header.appendChild(myH1);
+
+                var myPara = document.createElement('p');
+                myPara.textContent = 'Hometown: ' + jsonObj['homeTown'] + ' // Formed: ' + jsonObj['formed'];
+                header.appendChild(myPara);
+            }
+            function showFamily(jsonObj) {
+                var family = jsonObj['members'];
+
+                for (var i = 0; i < family.length; i++) {
+                    var myArticle = document.createElement('article');
+                    var myH2 = document.createElement('h2');
+                    var myPara1 = document.createElement('p');
+                    var myPara2 = document.createElement('p');
+                    var myPara3 = document.createElement('p');
+                    var myList = document.createElement('ul');
+
+                    myH2.textContent = family[i].name;
+                    myPara1.textContent = 'Birth Place: ' + family[i].birthPlace;
+                    myPara2.textContent = 'Age: ' + family[i].age;
+                    myPara3.textContent = 'All about me:';
+
+                    var allAboutMe = family[i].allAboutMe;
+                    for (var j = 0; j < allAboutMe.length; j++) {
+                        var listItem = document.createElement('li');
+                        listItem.textContent = allAboutMe[j];
+                        myList.appendChild(listItem);
+                    }
+
+                    myArticle.appendChild(myH2);
+                    myArticle.appendChild(myPara1);
+                    myArticle.appendChild(myPara2);
+                    myArticle.appendChild(myPara3);
+                    myArticle.appendChild(myList);
+
+                    section.appendChild(myArticle);
+                }
+            }
+
+        </script>
+    </body>
+</html>
