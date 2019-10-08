@@ -9,11 +9,10 @@ xhr.addEventListener("readystatechange", function () {
 	}
 });
 
-xhr.open("GET", "https://love-calculator.p.rapidapi.com/getPercentage", true);
-xhr.setRequestHeader("x-rapidapi-host", "love-calculator.p.rapidapi.com?fname=%3Crequired%3E&sname=%3Crequired%3E");
+xhr.open("GET", "https://love-calculator.p.rapidapi.com/getPercentage?fname=%3Crequired%3E&sname=%3Crequired%3E");
+xhr.setRequestHeader("x-rapidapi-host", "love-calculator.p.rapidapi.com");
 xhr.setRequestHeader("x-rapidapi-key", "b086763a6fmshd30cfe176b59170p1721d3jsn383d0383abde");
 
 xhr.send(data);
-
 
 
