@@ -1,16 +1,19 @@
-document.getElementByTagName('article').addEventListener('mouseover', mouseOver);
+document.getElementsByTagName('ARTICLE').onmouseover = function()
+{mouseOver()};
 
-document.getElementByTagName('article').onmouseout = function()
-{mouseOut(this)};
+document.get
+
+document.getElementsByTagName('article').onmouseout = function()
+{mouseOut()};
 
 function mouseOver() {
-  document.getElementByTagName('article').style.height = "330px";
-   document.getElementByTagName('article').style.width = "283.99px";
-     document.getElementByTagName("article").style.color = "#3AAFA9";
+  document.getElementsByTagName('article').style.height = "330px";
+   document.getElementsByTagName('article').style.width = "283.99px";
+     document.getElementsByTagName("article").style.color = "#3AAFA9";
 }
 
-function mouseOut(x) {
-  document.getElementByTagName('article').style.height = "264px";
-   document.getElementByTagName('article').style.width = "227.19px"
-    document.getElementByTagName("article").style.color = "black";
+function mouseOut() {
+  document.getElementsByTagName('article').style.height = "264px";
+   document.getElementsByTagName('article').style.width = "227.19px"
+    document.getElementsByTagName("article").style.color = "black";
 }
