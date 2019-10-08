@@ -1,0 +1,95 @@
+* || general styles for family page */
+
+html {
+    font-family: 'helvetica neue', helvetica, arial, sans-serif;
+}
+
+body {
+    width: 800px;
+    margin: 0 auto;
+}
+
+nav{
+    margin: 0 auto;
+    width: 300px;
+    clear: both;
+    padding-top: 50px;
+    }
+
+nav ul {
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li{
+    display: inline; /*makes words horizontal since default is verticle*/
+    float: left; /*gets the blocks to float next to each other*/
+    background-color: #3AAFA9;
+    color: #FEFFFF;
+}
+nav ul li {
+    display: block;
+    text-align: center; /*centers text to middle of li element*/
+}
+nav ul li a {
+    display: block;/*makes whole link a box to click not just the word*/
+    padding: 10px 10px;
+    width: 128px;  /* makes link boxes larger to that they are centered*/
+    font-size: 85%;
+    text-decoration: none; /*removes line under link*/
+}
+nav ul li a:hover {
+    background-color: #FEFFFF; /*when mouse is on nav link it will be this color*/
+    color: #17252A;
+}
+nav ul li.active a {
+    background-color: #17252A; /*makes current page link blue*/
+    color: #FEFFFF;
+}
+
+#media{
+    background-size: cover;/*scale the img to be as large as possible*/
+    background-position: center;
+    background-image: url("/CIT261/img/pool.jpg");
+    background-attachment: fixed;
+    opacity: 0.5;
+}
+
+h1, h2 {
+    font-family: 'Faster One', cursive;
+}
+
+/* header styles */
+
+h1 {
+    font-size: 4rem;
+    text-align: center;
+}
+
+header p {
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* section styles */
+
+section article {
+    width: 33%;
+    float: left;
+}
+
+section p {
+    margin: 5px 0;
+}
+
+section ul {
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 2.5rem;
+    letter-spacing: -5px;
+    margin-bottom: 10px;
+}
