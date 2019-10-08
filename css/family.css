@@ -28,10 +28,12 @@ nav li{
     background-color: #3AAFA9;
     color: #FEFFFF;
 }
+
 nav ul li {
     display: block;
     text-align: center; /*centers text to middle of li element*/
 }
+
 nav ul li a {
     display: block;/*makes whole link a box to click not just the word*/
     padding: 10px 10px;
@@ -39,10 +41,12 @@ nav ul li a {
     font-size: 85%;
     text-decoration: none; /*removes line under link*/
 }
+
 nav ul li a:hover {
     background-color: #FEFFFF; /*when mouse is on nav link it will be this color*/
     color: #17252A;
 }
+
 nav ul li.active a {
     background-color: #17252A; /*makes current page link blue*/
     color: #FEFFFF;
@@ -54,10 +58,6 @@ nav ul li.active a {
     background-image: url("/CIT261/img/pool.jpg");
     background-attachment: fixed;
     opacity: 0.5;
-}
-
-h1, h2 {
-    font-family: 'Faster One', cursive;
 }
 
 /* header styles */
