@@ -55,7 +55,7 @@ nav ul li.active a {
 #media{
     background-size: cover;/*scale the img to be as large as possible*/
     background-position: center;
-    background-image: url("/CIT261/img/pool2.jpg");
+    background-image: url("/CIT261/img/pool3.png");
     background-attachment: fixed;
 }
 
@@ -81,6 +81,7 @@ section article {
 
 section article:hover{
     color: #3AAFA9;
+    font-weight: bolder;
 }
 
 section p {
