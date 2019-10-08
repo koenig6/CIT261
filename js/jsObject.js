@@ -6,11 +6,13 @@ var ctx = canvas.getContext("2d");
 var spawnLineY = 25;
 
 // spawn a new object every 1500ms
-var spawnRate = 1500;
+var min = 1000;
+var max = 1700;
+//var spawnRate = 1500;
+var spawnRate = Math.random() * (max - min) + min;
 
 // set how fast the objects will fall
-//var spawnRateOfDescent = 0.50;
-var spawnRateOfDescent = Math.random();
+var spawnRateOfDescent = 0.50;
 
 // when was the last object spawned
 var lastSpawn = -1;
