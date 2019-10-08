@@ -55,12 +55,8 @@ nav ul li.active a {
 #media{
     background-size: cover;/*scale the img to be as large as possible*/
     background-position: center;
-    background-image: url("/CIT261/img/pool.jpg");
+    background-image: url("/CIT261/img/pool2.jpg");
     background-attachment: fixed;
-}
-
-#media img{
-    opacity: 0.2;
 }
 
 /* header styles */
