@@ -1,8 +1,6 @@
 document.getElementsByTagName('ARTICLE').onmouseover = function()
 {mouseOver()};
 
-document.get
-
 document.getElementsByTagName('article').onmouseout = function()
 {mouseOut()};
 
