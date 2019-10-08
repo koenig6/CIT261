@@ -1,10 +1,10 @@
-
+var data = null;
 
 var loveObject = new XMLHttpRequest();
 
-loveObject.open("GET", "https://love-calculator.p.rapidapi.com/getPercentage?fname=fname&sname=sname");
+loveObject.open("GET", "https://love-calculator.p.rapidapi.com/getPercentage?fname=John&sname=Alice");
 
-loveObject.send();
+loveObject.send(data);
 
 loveObject.onclick = function(){
 
