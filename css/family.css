@@ -57,7 +57,7 @@ nav ul li.active a {
     background-position: center;
     background-image: url("/CIT261/img/pool.jpg");
     background-attachment: fixed;
-    opacity: 0.5;
+    opacity: 0.2;
 }
 
 /* header styles */
