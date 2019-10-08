@@ -79,6 +79,12 @@ section article {
     float: left;
 }
 
+section article:hover{
+    color: #3AAFA9;
+    height: 330px;
+    width: 283.99px;
+}
+
 section p {
     margin: 5px 0;
 }
