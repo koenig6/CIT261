@@ -9,7 +9,8 @@ var spawnLineY = 25;
 var spawnRate = 1500;
 
 // set how fast the objects will fall
-var spawnRateOfDescent = 0.50;
+//var spawnRateOfDescent = 0.50;
+var spawnRateOfDescent = Math.random();
 
 // when was the last object spawned
 var lastSpawn = -1;
