@@ -57,6 +57,9 @@ nav ul li.active a {
     background-position: center;
     background-image: url("/CIT261/img/pool.jpg");
     background-attachment: fixed;
+}
+
+#media img{
     opacity: 0.2;
 }
 
