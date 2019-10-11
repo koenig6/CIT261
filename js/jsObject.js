@@ -6,10 +6,7 @@ var ctx = canvas.getContext("2d");
 var spawnLineY = 25;
 
 // spawn a new object every 1500ms
-var min = 1000;
-var max = 1700;
-//var spawnRate = 1500;
-var spawnRate = Math.random() * (max - min) + min;
+var spawnRate = 1500;
 
 // set how fast the objects will fall
 var spawnRateOfDescent = 0.50;
@@ -24,13 +21,13 @@ var objects = [];
 var startTime = Date.now();
 
 var img1 = new Image();
-img1.src = "https://upload.wikimedia.org/wikipedia/commons/5/52/Heart_icon_red_hollow.svg";
+img1.src = "https://upload.wikimedia.org/wikipedia/commons/c/c5/1f639-joy_cat.png";
 
 var img2 = new Image();
-img2.src = "https://upload.wikimedia.org/wikipedia/commons/4/4e/Drawn_heart.svg";
+img2.src = "https://upload.wikimedia.org/wikipedia/commons/e/e0/Emojione_263A.svg";
 
 var img3 = new Image();
-img3.src = "https://upload.wikimedia.org/wikipedia/commons/7/7d/Heart_icon.svg";
+img3.src = "https://upload.wikimedia.org/wikipedia/commons/8/8e/Twemoji2_1f602.svg";
 
 // Our images array
 var images = [img1, img2, img3];
