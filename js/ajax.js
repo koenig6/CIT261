@@ -1,38 +1,73 @@
-/*var data = null;
+var jokeData = null;
 
-var loveObject = new XMLHttpRequest();
-
-loveObject.withCredentials = true;
-
-loveObject.open("GET", "https://love-calculator.p.rapidapi.com/getPercentage?fname=John&sname=Alice&apiKey=ApIKey");
-
-loveObject.send(data);
-
-loveObject.onclick = function(){
-
-    var loveInfo = JSON.parse(loveObject.responseText)
-    console.log(loveInfo);
-
-    document.getElementById('fname').innerHTML = loveInfo.fname;
-    document.getElementById('sname').innerHTML = loveInfo.sname;
-    document.getElementById('percentage').innerHTML = loveInfo.percentage;
-    document.getElementById('result').innerHTML = loveInfo.result;
-}
-*/
-
-var data = null;
-
+function getData(){
 var xhr = new XMLHttpRequest();
-xhr.withCredentials = true;
+
 
 xhr.addEventListener("readystatechange", function () {
 	if (this.readyState === this.DONE) {
-		console.log(this.responseText);
+		saveToLocal(this.responseText);
 	}
 });
 
-xhr.open("GET", "https://love-calculator.p.rapidapi.com/getPercentage?fname=John&sname=Alice");
-xhr.setRequestHeader("x-rapidapi-host", "love-calculator.p.rapidapi.com");
+xhr.open("GET", "https://sv443.net/jokeapi/category/Programming"); //document.getElementById("category_name").value);
+xhr.setRequestHeader("x-rapidapi-host", "jokeapi.p.rapidapi.com");
 xhr.setRequestHeader("x-rapidapi-key", "b086763a6fmshd30cfe176b59170p1721d3jsn383d0383abde");
 
-xhr.send(data);
+xhr.send(jokeData);
+}
+
+function saveToLocal(response) {
+	jokeData = JSON.parse(response);
+
+	localStorage.clear();
+
+    localStorage.setItem("Joke", jokeData.joke);
+    localStorage.setItem("Type", jokeData.type);
+    localStorage.setItem("Setup", jokeData.setup);
+    localStorage.setItem("Delivery", jokeData.delivery);
+}
+
+function displayJoke() {
+
+    if (localStorage.getItem("Type") === "twopart")
+        {
+
+            var setup = localStorage.getItem("Setup");
+            var delivery = localStorage.getItem("Delivery");
+            document.getElementById("joke").innerHTML = setup + delivery;
+        }
+
+    if(localStorage.getItem("Type") === "single")
+        {
+            var name = localStorage.getItem("Joke");
+            document.getElementById("joke").innerHTML = name;
+        }
+}
+
+function getJoke() {
+    getData();
+    displayJoke();
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

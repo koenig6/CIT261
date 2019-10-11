@@ -10,35 +10,23 @@
         <nav>
             <ul class="navigation">
                 <li><a href="https://koenig6.github.io/CIT261/index.html">Home</a></li>
-                <li class="active"><a href="">JavaScript Objects</a></li>
+                <li class="active"><a href="">AJAX</a></li>
 
             </ul>
         </nav>
         <main>
-            <canvas id="canvas" width=600 height=175></canvas>
+            <canvas id="canvas" width=600 height=175></canvas><br><br>
 
-            <div id="love">
+            <div id="joke">
 
-                <h2>Find out your love compatibility!</h2>
+                <p>Click the joke button to see a random joke appear here!</p>
 
+            </div><br>
 
-                <form method="get">
-                 <input type=text id=fName size="5"><br><br>
-                <input type=text id=sName size="5">
-                    <button type="submit" onclick="js/ajax.js">Submit</button>
-                    </form>
-
-                <p>Percentage: <span id=percent></span>%</p>
-                <p><span id=result></span></p>
-
-
-            </div>
-
-
-
-
+            <button id="jokeBtn" type="button" onClick="getJoke()">Joke</button>
 
         </main>
+
         <script src="js/jsObject.js"></script>
         <script src="js/ajax.js"></script>
 
