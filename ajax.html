@@ -14,34 +14,27 @@
 
             </ul>
         </nav>
+
         <main>
             <canvas id="canvas" width=600 height=175></canvas><br><br>
 
             <div id="joke">
 
                 <p>Click the joke button to see a random joke appear here!</p>
+                 <button id="jokeBtn" type="button" onClick="getJoke()">Joke</button>
 
             </div><br>
 
-            <button id="jokeBtn" type="button" onClick="getJoke()">Joke</button>
+
 
             <div id="joke">
 
-                <canvas id="canvas" width=600 height=175></canvas><br><br>
-
                <p>Find out the nutrition of a food you want to eat.  Some examples to try could be: apple, carrots, steak, and chocolate.</p>
-
-
                     Food Name: <input type="text" id="search"><br><br>
-
-
                    <input type="submit" onclick="foodMatch()"><br><br>
-
-
                        <div id="foodResults"></div><br>
 
             </div><br>
-
         </main>
 
         <script src="js/jsObject.js"></script>
