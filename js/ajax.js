@@ -1,5 +1,9 @@
 var jokeData = null;
 
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
 function getData(){
 var xhr = new XMLHttpRequest();
 
@@ -75,21 +79,40 @@ xhr.send(data);
 
 function saveToFoodLocal(response) {
 
-	localStorage.clear();
+	window.localStorage.clear();
 
     localStorage.setItem("Food", response);
+    localStorage.setItem("Ready", "Ready");
 
 }
 
 
 function displayResults() {
 
-    var foodItems = localStorage.getItem("Food");
-
-   data = JSON.parse(foodItems);
-
     //this resets the screen
     document.getElementById("foodResults").innerHTML = "";
+
+    var timeout = false;
+    for(let i = 1; i <= 10; i++)
+        {
+            document.getElementById("foodResults").innerHTML = i;
+            if(localStorage.getItem("Ready")  === "Ready")
+               {
+                    break;
+               }
+            if(i == 10)
+                {
+                    document.getElementById("foodResults").innerHTML += "Timeout expired to food server.";
+                    return;
+                }
+            sleep(1000);
+        }
+
+    var foodItems = localStorage.getItem("Food");
+
+    data = JSON.parse(foodItems);
+
+
 
     for(var a = 0; a < data.length; a++)
         {
@@ -104,8 +127,10 @@ function displayResults() {
 }
 
 function foodMatch() {
+    window.localStorage.clear();
     getFoodData();
     displayResults();
+
   }
 
 
