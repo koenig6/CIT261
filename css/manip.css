@@ -50,23 +50,16 @@ nav ul li.active a {
     color: #FEFFFF;
 }
 
-.div-first {
-	background-color: #00BCD4;
-	font-size: 2em;
-}
-
-.div-later {
-	font-size: 0.7em;
-}
-
 #div2 {
 	background-color: #4DD0E1;
+    font-size: 2em;
+    font-weight: bold;
+    padding: 10px;
+    margin: 35px;
 }
 
-#div3 {
-	background-color: #B2EBF2;
+h2 {
+    text-align: center;
+    padding-top: 10px;
 }
 
-.hover-bold:hover {
-	font-weight: bold;
-}
