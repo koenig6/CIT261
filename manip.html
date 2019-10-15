@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/manip.css">
+        <title>CIT 261 Assignment Portal</title>
+    </head>
+    <body>
+        <nav>
+            <ul class="navigation">
+                <li><a href="https://koenig6.github.io/CIT261/index.html">Home</a></li>
+                <li class="active"><a href="">Manipulation of Properties</a></li>
+
+            </ul>
+        </nav>
+        <main>
+
+        <div id="div1" class="div-first hover-bold">This is the first div.</div><br>
+
+		<div id="div2" class="div-later hover-bold">This is the second div.</div><br>
+
+		<div id="div3" class="div-later hover-bold">This is the third div.</div><br>
+
+
+		<label for="txtColor">Color:</label> <input type="text" id="txtColor"><br />
+
+		<button onclick="changeBackgroundColor();">Change color</button>
+
+
+           <p> What kind of border would you like to see? Your choices are:
+            dotted, dashed, solid, double, groove, ridge, inset, outset, none</p>
+
+            <label for="border">Border Style:</label> <input type="text" id="border"><br />
+            <button onclick="changeBorder();">Change border</button>
+
+
+            <p> What color would you like your text? You can enter names or HEX.
+            Some examples would be: #2D2DC7 #C72D75 #2DC737 or red, yellow and blue.</p>
+            <label for="color">Color:</label> <input type="text" id="color"><br />
+
+		<button onclick="changeTextColor();">Change color</button>
+
+
+
+        </main>
+        <script src="js/manip.js"></script>
+
+    </body>
+</html>

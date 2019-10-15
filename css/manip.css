@@ -1,0 +1,72 @@
+html {
+    font-family: 'helvetica neue', helvetica, arial, sans-serif;
+}
+
+body {
+    width: 800px;
+    margin: 0 auto;
+}
+
+nav{
+    margin: 0 auto;
+    width: 300px;
+    clear: both;
+    padding-top: 50px;
+    }
+
+nav ul {
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li{
+    display: inline; /*makes words horizontal since default is verticle*/
+    float: left; /*gets the blocks to float next to each other*/
+    background-color: #3AAFA9;
+    color: #FEFFFF;
+}
+
+nav ul li {
+    display: block;
+    text-align: center; /*centers text to middle of li element*/
+}
+
+nav ul li a {
+    display: block;/*makes whole link a box to click not just the word*/
+    padding: 10px 10px;
+    width: 128px;  /* makes link boxes larger to that they are centered*/
+    font-size: 85%;
+    text-decoration: none; /*removes line under link*/
+}
+
+nav ul li a:hover {
+    background-color: #FEFFFF; /*when mouse is on nav link it will be this color*/
+    color: #17252A;
+}
+
+nav ul li.active a {
+    background-color: #17252A; /*makes current page link blue*/
+    color: #FEFFFF;
+}
+
+.div-first {
+	background-color: #00BCD4;
+	font-size: 2em;
+}
+
+.div-later {
+	font-size: 0.7em;
+}
+
+#div2 {
+	background-color: #4DD0E1;
+}
+
+#div3 {
+	background-color: #B2EBF2;
+}
+
+.hover-bold:hover {
+	font-weight: bold;
+}
