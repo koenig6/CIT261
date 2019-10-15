@@ -63,3 +63,4 @@ function changeWidth() {
 	div.style.width = width;
 
 }
+
