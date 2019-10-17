@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    width: 800px;
+    width: 900px;
     margin: 0 auto;
 }
 
@@ -65,6 +65,7 @@ nav ul li.active a {
     display: grid;
     grid-template-columns: auto auto auto;
     padding: 10px;
+    float: left;
 }
 
 #grid-item {
@@ -75,3 +76,9 @@ nav ul li.active a {
   height: 155px;
   width: 155px;
 }
+
+.colorpage{
+    clear: right;
+    margin-left: 40px;
+}
+

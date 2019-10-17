@@ -20,49 +20,49 @@
         </nav>
         <main>
 
-<div id='colorpage' ontouchstart="myFunction()" src="img/superWhy.PNG" height =100 width = 100 ></div>
+            <section class="grid-container">
+              <div id="grid-item" class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="drag1"  src="img/9.PNG" width="150" height="150">
+                </div>
 
-<section class="grid-container">
-  <div id="grid-item" class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
-    <img ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="drag1"  src="img/9.PNG" width="150" height="150">
-    </div>
+              <div id="grid-item" class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+                 <img ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="drag2"  src="img/5.PNG" width="150" height="150">
+                </div>
 
-  <div id="grid-item" class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
-     <img ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="drag2"  src="img/5.PNG" width="150" height="150">
-    </div>
+              <div id="grid-item" class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="drag3"  src="img/1.PNG" width="150" height="150">
+                </div>
 
-  <div id="grid-item" class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
-    <img ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="drag3"  src="img/7.PNG" width="150" height="150">
-    </div>
+              <div id="grid-item" class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+                      <img ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="drag4"  src="img/2.PNG" width="150" height="150">
+                </div>
 
-  <div id="grid-item" class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
-          <img ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="drag4"  src="img/2.PNG" width="150" height="150">
-    </div>
+                <div id="grid-item" class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
 
-    <div id="grid-item" class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+              <div id="grid-item" class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <img ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="drag5"  src="img/7.PNG" width="150" height="150">
+                </div>
 
-  <div id="grid-item" class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
-        <img ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="drag5"  src="img/1.PNG" width="150" height="150">
-    </div>
+              <div id="grid-item" class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <img ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="drag6"  src="img/6.PNG" width="150" height="150">
+                </div>
 
-  <div id="grid-item" class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
-        <img ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="drag6"  src="img/6.PNG" width="150" height="150">
-    </div>
+              <div id="grid-item" class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <img ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="drag7"  src="img/8.PNG" width="150" height="150">
+                </div>
 
-  <div id="grid-item" class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
-        <img ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="drag7"  src="img/8.PNG" width="150" height="150">
-    </div>
-
-  <div id="grid-item" class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
-        <img ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="drag8"  src="img/4.PNG" width="150" height="150">
-    </div>
-</section>
+              <div id="grid-item" class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <img ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="drag8"  src="img/4.PNG" width="150" height="150">
+                </div>
+            </section>
 
 
 
+            <p onmouseover="bigNav(this)" onmouseout="normalNav(this)" >Touch this picture to change the image.
+            <strong>Note:</strong> This example is for touch devices only.</p>
 
-<p onmouseover="bigNav(this)" onmouseout="normalNav(this)" >Touch this picture to change the image.
-<strong>Note:</strong> This example is for touch devices only.</p>
+
+            <img id='colorpage' src="img/superWhy.PNG"  ontouchstart="myFunction()" height =200 width = 200>
 
         </main>
         <script src="js/events.js"></script>
