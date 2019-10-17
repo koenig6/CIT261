@@ -59,6 +59,10 @@ nav ul li.active a {
     border-color: black;
 }
 
+h1{
+    text-align: center;
+}
+
 
 .grid-container {
     width: 530px;
