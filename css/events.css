@@ -61,6 +61,7 @@ nav ul li.active a {
 
 
 .grid-container {
+    width: 530px;
     display: grid;
     grid-template-columns: auto auto auto;
     padding: 10px;
@@ -68,10 +69,9 @@ nav ul li.active a {
 
 #grid-item {
   border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 20px;
+  padding: 10px;
   font-size: 30px;
   text-align: center;
   height: 155px;
   width: 155px;
 }
-

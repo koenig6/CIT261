@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/events.css">
+        <title>CIT 261 Assignment Portal</title>
+
+
+
+
+    </head>
+    <body id="puzzle">
+        <nav>
+            <ul class="navigation">
+                <li><a href="https://koenig6.github.io/CIT261/index.html">Home</a></li>
+                <li class="active"><a href="">Events</a></li>
+
+            </ul>
+        </nav>
+        <main>
+
+<div id='colorpage' ontouchstart="myFunction()" src="img/superWhy.PNG" height =100 width = 100 ></div>
+
+<section class="grid-container">
+  <div id="grid-item" class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <img ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="drag1"  src="img/9.PNG" width="150" height="150">
+    </div>
+
+  <div id="grid-item" class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+     <img ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="drag2"  src="img/5.PNG" width="150" height="150">
+    </div>
+
+  <div id="grid-item" class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <img ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="drag3"  src="img/7.PNG" width="150" height="150">
+    </div>
+
+  <div id="grid-item" class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <img ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="drag4"  src="img/2.PNG" width="150" height="150">
+    </div>
+
+    <div id="grid-item" class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+  <div id="grid-item" class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <img ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="drag5"  src="img/1.PNG" width="150" height="150">
+    </div>
+
+  <div id="grid-item" class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <img ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="drag6"  src="img/6.PNG" width="150" height="150">
+    </div>
+
+  <div id="grid-item" class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <img ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="drag7"  src="img/8.PNG" width="150" height="150">
+    </div>
+
+  <div id="grid-item" class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <img ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="drag8"  src="img/4.PNG" width="150" height="150">
+    </div>
+</section>
+
+
+
+
+<p onmouseover="bigNav(this)" onmouseout="normalNav(this)" >Touch this picture to change the image.
+<strong>Note:</strong> This example is for touch devices only.</p>
+
+        </main>
+        <script src="js/events.js"></script>
+
+    </body>
+</html>
