@@ -1,11 +1,9 @@
 function bigNav(x) {
   x.style.fontSize = "46px";
- // x.style.width = "400px";
 }
 
 function normalNav(x) {
   x.style.fontSize = "13px";
-  //x.style.width = "200px";
 }
 
 function myFunction() {
@@ -30,7 +28,7 @@ function myFunction() {
 }
 
 function dragStart(event) {
-  event.dataTransfer.setData("Text", event.target.id);
+  event.dataTransfer.setData("Img", event.target.id);
 }
 
 function allowDrop(event) {
@@ -39,7 +37,6 @@ function allowDrop(event) {
 
 function drop(event) {
   event.preventDefault();
-  var data = event.dataTransfer.getData("Text");
+  var data = event.dataTransfer.getData("Img");
   event.target.appendChild(document.getElementById(data));
-  document.getElementById("demo").innerHTML = "The p element was dropped";
 }
