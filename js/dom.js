@@ -33,8 +33,8 @@ function changeBackgroundColor() {
 	var textbox_id = "txtColor";
 	var textbox = document.getElementById(textbox_id);
 
-	var div_id = "div2";
-	var div = document.getElementById(div_id);
+	var ul_id = "myList";
+	var div = document.getElementById(ul_id);
 
 	// We should verify values here before we use them...
 	var color = textbox.value;
@@ -46,8 +46,8 @@ function changeBorder() {
 	var textbox_id = "border";
 	var textbox = document.getElementById(textbox_id);
 
-	var div_id = "div2";
-	var div = document.getElementById(div_id);
+	var ul_id = "myList";
+	var div = document.getElementById(ul_id);
 
 	// We should verify values here before we use them...
 	var border = textbox.value;
@@ -59,8 +59,8 @@ function changeTextColor() {
 	var textbox_id = "color";
 	var textbox = document.getElementById(textbox_id);
 
-	var div_id = "div2";
-	var div = document.getElementById(div_id);
+	var ul_id = "myList";
+	var div = document.getElementById(ul_id);
 
 	// We should verify values here before we use them...
 	var color = textbox.value;
@@ -72,8 +72,8 @@ function changeFont() {
 	var textbox_id = "font";
 	var textbox = document.getElementById(textbox_id);
 
-	var div_id = "div2";
-	var div = document.getElementById(div_id);
+	var ul_id = "myList";
+	var div = document.getElementById(ul_id);
 
 	// We should verify values here before we use them...
 	var font = textbox.value;

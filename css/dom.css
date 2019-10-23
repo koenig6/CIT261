@@ -43,7 +43,7 @@ nav ul li.active a {
 }
 
 #media{
-    background-image: url("/CIT261/img/pool3.png");
+    background-image: url("/CIT261/img/paper.png");
      background-size: cover;/*scale the img to be as large as possible*/
     background-position: center;
     background-attachment: fixed;
