@@ -45,7 +45,7 @@ nav ul li.active a {
 #media{
     background-size: cover;/*scale the img to be as large as possible*/
     background-position: center;
-    background-image: url("/CIT261/img/paper.PNG");
+    background-image: url("/CIT261/img/paper2.PNG");
     background-attachment: fixed;
 }
 
