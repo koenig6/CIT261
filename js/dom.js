@@ -2,10 +2,10 @@ function addItem(){
     var ul = document.getElementById("myList");
     var newItem = document.getElementById("item"); //get text from box
     var li = document.createElement("li"); // create li
-    li.setAttributes({'id':item.value,
-                    'type':'hidden',
-                    'name':'actors[]',
-                    'value':item.value}); //gives li an id of the item
+    li.setAttribute('id',item.value);
+    li.setAttribute('type':'hidden');
+    li.setAttribute('name':'actors[]');
+    li.setAttribute('value':item.value); //gives li an id of the item
     li.appendChild(document.createTextNode(item.value)); // add to list
     ul.appendChild(li); // add to list
 }
