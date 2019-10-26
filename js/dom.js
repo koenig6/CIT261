@@ -10,6 +10,7 @@ function addItem(){
     ul.appendChild(li); // add to list
 }
 
+
 function removeItem(){
     var ul = document.getElementById("myList");
     var item = document.getElementById("item");
