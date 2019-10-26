@@ -2,7 +2,7 @@ function addItem(){
     var ul = document.getElementById("myList");
     var newItem = document.getElementById("item"); //get text from box
     var li = document.createElement("li"); // create li
-    li.setAttribute({'id':'item.value',
+    li.setAttributes({'id':'item.value',
                     'type':'hidden',
                     'name':'actors[]',
                     'value':'item'}); //gives li an id of the item
