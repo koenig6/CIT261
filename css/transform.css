@@ -129,7 +129,7 @@ main{
  width: 100px;
  position: relative;
  left: 550px;
- bottom: 600px;
+ bottom: 570px;
  background: -webkit-linear-gradient(#FFC300,white);
  background: -moz-linear-gradient(#FFC300,white);
  background: -o-linear-gradient(#FFC300,white);
@@ -154,8 +154,8 @@ div#sun:hover {
   height: 150px;
   margin: 100px;
   position: absolute;
-  left: 400px;
-  bottom: 10px;
+  left: 800px;
+  bottom: 50px;
   transition: transform 0.8s;
   width: 150px;
 }
@@ -167,8 +167,8 @@ div#sun:hover {
   margin: 100px;
   transition: transform 0.8s;
   position: absolute;
-  left: 400px;
-  bottom: 10px;
+  left: 800px;
+  bottom: 50px;
   width: 150px;
 }
 
