@@ -30,17 +30,28 @@
     display: block;
     background: radial-gradient(circle at 50% 80%, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)74%, white 80%, white 84%, rgba(255, 255, 255, 0)100%);
 }
+
 /*popping effect*/
 @keyframes pop{
     from{
-    opacity:1;
-    transform: translateZ(0)scale(1.75, 1.75);
+        opacity:1;
+        transform: translateZ(0)scale(1, 1);
     }
     to{
         opacity: 0;
         transform: translateZ(0)scale(1.75, 1.75);
     }
 }
+
 .bubble:hover{
     animation: pop 0.50s cubic-bezier(0.16, 0.87, 0.48, 0.99)forwards;
 }
+
+
+
+
+
+
+
+
+
