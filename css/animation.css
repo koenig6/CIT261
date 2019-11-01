@@ -1,77 +1,85 @@
-.bubble{
-    display: inline-block;
+
+header, nav, main, body{
+    max-width: 750px;
+    margin: auto; /*centers on page*/
+}
+
+nav{
+    margin: 0 auto;
     width: 300px;
-    color: black;
-    height: 300px;
-    border-radius: 100%;
-    position: relative;
-    cursor: pointer;
-    background: radial-gradient(circle at 50% 55%, rgba(240, 245, 255, 0.9), rgba(240, 245, 255, 0.9)40%, rgba(255, 238, 255, 0.8)60%, rgba(43, 130, 255, 0.4));
-    animation: xAxis 2.5s infinite cubic-bezier(0.02, 0.01, 0.21, 1);
-}
-
-.move::after{
-      animation: yAxis 2.5s infinite cubic-bezier(0.3, 0.27, 0.07, 1.64);
-}
-
-@keyframes xAxis{
-    50%{
-        animation-timing-function: cubic-bezier(0.3, 0.27, 0.07, 1.64);
-        transform: translateX(100px);
+    clear: both;
+    padding-top: 50px;
     }
+
+nav ul {
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
 }
 
-@keyframes yAxis{
-    50%{
-        animation-timing-function: cubic-bezier(0.02, 0.01, 0.21, 1);
-        transform: translateY(-100px);
-    }
+nav li{
+    display: inline; /*makes words horizontal since default is verticle*/
+    float: left; /*gets the blocks to float next to each other*/
+    background-color: #3AAFA9;
+    color: #FEFFFF;
 }
 
-
-.buble::before{
-    content: "";
-    display: inline-block;
-    padding-top: 100%;
-}
-
-.bubble::after{
-    content: "";
-    position: absolute;
-    top: 5%;
-    left: 10%;
-    width: 100%;
-    height: 100%;
-    border-radius: 100%;
-    -webkit-filter: blur(1px);
-    z-index: 2;
-    -webkit-transform: rotateZ(-30deg);
-    transform: rotateZ(-30deg);
+nav ul li {
     display: block;
-    background: radial-gradient(circle at 50% 80%, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)74%, white 80%, white 84%, rgba(255, 255, 255, 0)100%);
+    text-align: center; /*centers text to middle of li element*/
 }
 
-/*popping effect*/
-@keyframes pop{
+nav ul li a {
+    display: block;/*makes whole link a box to click not just the word*/
+    padding: 10px 10px;
+    width: 128px;  /* makes link boxes larger to that they are centered*/
+    font-size: 85%;
+    text-decoration: none; /*removes line under link*/
+}
+
+nav ul li a:hover {
+    background-color: #FEFFFF; /*when mouse is on nav link it will be this color*/
+    color: #17252A;
+}
+
+nav ul li.active a {
+    background-color: #17252A; /*makes current page link blue*/
+    color: #FEFFFF;
+}
+
+.grid-container {
+    width: 650px;
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 50px;
+}
+
+#grid-item {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  font-size: 85%;
+  text-align: center;
+  height: 135px;
+  width: 300px;
+}
+
+@keyframes rotate{
     from{
-        opacity:1;
-        transform: translateZ(0)scale(1, 1);
+        transform: rotateY(0deg)
     }
     to{
-        opacity: 0;
-        transform: translateZ(0)scale(1.75, 1.75);
+        transform: rotateY(360deg)
     }
 }
 
-.bubble:hover{
-    animation: pop 0.50s cubic-bezier(0.16, 0.87, 0.48, 0.99)forwards;
+#one{
+  transform: perspective(500px);
+  transition: all ease-out 0.5s;
+  animation: rotate 1s infinite ease-in-out;
+  animation-delay: 0.5s;
 }
 
-
-
-
-
-
-
-
-
+/*the paused class to be able to stop the animation mid-go!*/
+.paused {
+  animation-play-state: paused;
+}
