@@ -19,7 +19,7 @@ function animationThree()//this function can be width or if you set "left" in cs
 {
     var slide = document.getElementById('animationThree');
     slide.style.transition = "width 3.5s ease-in 0s"; //target, duration to occur, timing, delay
-    slide.style.width = "0px";
+    slide.style.width = "300px";
 }
 
 function animationFiveMove()
@@ -31,8 +31,8 @@ function animationFiveMove()
 
 function animationSixAppend()
 {
-    var ani = document.styleSheets[0].cssRules[1];
-    ani.appendRule('50% {background: black; height:50px; width: 50px}');
+    var append = document.styleSheets[0].cssRules[18];
+    append.appendRule('50% {background: black; height: 25px; width: 25px}')
 }
 
 
