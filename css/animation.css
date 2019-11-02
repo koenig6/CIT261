@@ -54,32 +54,72 @@ nav ul li.active a {
     padding: 50px;
 }
 
-#grid-item {
+.grid-item {
   border: 1px solid rgba(0, 0, 0, 0.8);
   padding: 10px;
   font-size: 85%;
   text-align: center;
-  height: 135px;
+  height: 300px;
   width: 300px;
 }
 
-@keyframes rotate{
-    from{
-        transform: rotateY(0deg)
-    }
-    to{
-        transform: rotateY(360deg)
-    }
+#animationOne {
+  width: 300px;
+  height: 275px;
+  background-color: red;
 }
 
-#one{
-  transform: perspective(500px);
-  transition: all ease-out 0.5s;
-  animation: rotate 1s infinite ease-in-out;
-  animation-delay: 0.5s;
+#animationTwo {
+ width: 300px;
+  height: 275px;
+  background-color: red;
 }
 
-/*the paused class to be able to stop the animation mid-go!*/
-.paused {
-  animation-play-state: paused;
+#animationThree {
+    width: 300px;
+    height: 275px;
+    background-color: red;
+    overflow: hidden; /*hides contents in div*/
+}
+
+#animationFour {
+ width: 300px;
+  height: 275px;
+  background-color: red;
+}
+
+#height{
+    position: relative;
+    top: 275px;
+}
+
+#animationFive {
+    height: 100px;
+    width: 100px;
+  border-radius: 100%;
+  background: red;
+}
+
+#animationSix {
+ width: 300px;
+  height: 275px;
+  background-color: red;
+ animation: boxSix 15.0s linear 3;
+}
+
+@keyframes boxFive{
+    0% { transform: translateX(0px); }
+    25% { transform: translateX(200px);}
+    50% { transform: translateX(200px) translateY(200px);}
+    75% { transform: translateX(0px) translateY(200px);}
+    100%{ transform: translateX(0px) translateY(0px); }
+    }
+
+@keyframes boxSix{
+    0% { border-radius: 100%; background: purple;}
+    20% {border-radius: 0%; background: blue;}
+    40% {border-radius: 100%; background: green;}
+    60% {border-radius: 0%; background: yellow;}
+    80% {border-radius: 100%; background: orange;}
+    100% {border-radius: 0%; background: red;}
 }

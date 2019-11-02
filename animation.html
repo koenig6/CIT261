@@ -14,60 +14,40 @@
             </ul>
         </nav>
         <main>
+
+
             <div class="grid-container">
 
-                <div class="one" id="grid-item">
-                    <nav>
-                        <ul class="navigation">
-                            <li><a href="https://koenig6.github.io/CIT261/index.html">Home</a></li>
-                            <li class="active"><a href="https://koenig6.github.io/CIT261/animation.html">CSS Animation</a></li>
-                        </ul>
-                    </nav>
+                <div id="one" class="grid-item">
+                    <div id ="animationOne"></div>
+                    <button onclick="animationOne()">Color</button>
                 </div>
 
-                <div class="two" id="grid-item">
-                    <nav>
-                        <ul class="navigation">
-                            <li><a href="https://koenig6.github.io/CIT261/index.html">Home</a></li>
-                            <li class="active"><a href="https://koenig6.github.io/CIT261/animation.html">CSS Animation</a></li>
-                        </ul>
-                    </nav>
+                <div id="two" class="grid-item">
+                    <div id ="animationTwo"></div>
+                    <button onclick="animationTwo()">Fade</button>
                 </div>
 
-                <div class="three" id="grid-item">
-                    <nav>
-                        <ul class="navigation">
-                            <li><a href="https://koenig6.github.io/CIT261/index.html">Home</a></li>
-                            <li class="active"><a href="https://koenig6.github.io/CIT261/animation.html">CSS Animation</a></li>
-                        </ul>
-                    </nav>
+                <div id="three" class="grid-item">
+                    <div id ="animationThree"></div>
+                    <button onclick="animationThree()">Slide</button>
                 </div>
 
-                <div class="four" id="grid-item">
-                    <nav>
-                        <ul class="navigation">
-                            <li><a href="https://koenig6.github.io/CIT261/index.html">Home</a></li>
-                            <li class="active"><a href="https://koenig6.github.io/CIT261/animation.html">CSS Animation</a></li>
-                        </ul>
-                    </nav>
+                <div id="four" class="grid-item">
+                    <div id ="animationFour" >
+                          <input id="height" type='number' step="10" onchange="animationFour.style.height=this.value+'px'"><!--js in your html-->
+                    </div>
+                   Height
                 </div>
 
-                <div class="five" id="grid-item">
-                   <nav>
-                        <ul class="navigation">
-                            <li><a href="https://koenig6.github.io/CIT261/index.html">Home</a></li>
-                            <li class="active"><a href="https://koenig6.github.io/CIT261/animation.html">CSS Animation</a></li>
-                        </ul>
-                    </nav>
+                <div id="five" class="grid-item">
+                    <div id ="animationFive"></div>
+                    <button onclick="animationFiveMove()">Move</button>
                 </div>
 
-                <div class="six" id="grid-item">
-                   <nav>
-                        <ul class="navigation">
-                            <li><a href="https://koenig6.github.io/CIT261/index.html">Home</a></li>
-                            <li class="active"><a href="https://koenig6.github.io/CIT261/animation.html">CSS Animation</a></li>
-                        </ul>
-                    </nav>
+                <div id="six" class="grid-item">
+                   <div id ="animationSix"></div>
+                    <button onclick="animationSixAppend()">Append Rule</button>
                 </div>
             </div>
 
