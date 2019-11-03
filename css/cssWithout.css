@@ -1,0 +1,169 @@
+header, nav, main, body{
+    max-width: 800px;
+    margin: auto; /*centers on page*/
+}
+
+nav{
+    margin: 0 auto;
+    width: 300px;
+    clear: both;
+    padding-top: 50px;
+    }
+
+nav ul {
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li{
+    display: inline; /*makes words horizontal since default is verticle*/
+    float: left; /*gets the blocks to float next to each other*/
+    background-color: #3AAFA9;
+    color: #FEFFFF;
+}
+
+nav ul li {
+    display: block;
+    text-align: center; /*centers text to middle of li element*/
+}
+
+nav ul li a {
+    display: block;/*makes whole link a box to click not just the word*/
+    padding: 10px 10px;
+    width: 128px;  /* makes link boxes larger to that they are centered*/
+    font-size: 85%;
+    text-decoration: none; /*removes line under link*/
+}
+
+nav ul li a:hover {
+    background-color: #FEFFFF; /*when mouse is on nav link it will be this color*/
+    color: #17252A;
+}
+
+nav ul li.active a {
+    background-color: #17252A; /*makes current page link blue*/
+    color: #FEFFFF;
+}
+
+div#bunny{
+    position: absolute;
+    top: 700px;
+    animation-name: hopping;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+    animation-play-state: running;
+    animation-delay: 0s;
+    animation-fill-mode: backwards;
+}
+
+div#ball{
+    position: absolute;
+    top: 390px;
+    border-radius: 100%;
+    overflow: hidden;
+    animation-name: dribble;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    animation-iteration-count: 3;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
+
+div#heart{
+    position: absolute;
+    top: 450px;
+    animation-name: throb;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 6;
+    animation-direction: alternate;
+}
+
+.rotate{
+    width: 240px;
+    height: 200px;
+    margin: 40px 10px 10px;
+    float: left;
+}
+
+.rotate > .front{
+    position: absolute;
+    transform: perspective(600px) rotateY(0deg);
+    transition: transform .5s linear 0s;
+    background: tan;
+    width: 240px;
+    height: 200px;
+    border-radius: 7px;
+    border-style: solid;
+    backface-visibility: hidden; /*so you can't see other side of card when turns and will see the other card*/
+}
+
+.rotate > .back{
+    position: absolute;
+    transform: perspective(600px) rotateY(180deg);
+    transition: transform .5s linear 0s;
+    background: cornsilk;
+    width: 240px;
+    height: 200px;
+    font-size: 12px;
+    border-radius: 7px;
+    border-style: solid;
+    backface-visibility: hidden; /*so you can't see other side of card when turns and will see the other card*/
+}
+
+.rotate:hover > .front{
+    transform: perspective(600px) rotateY(-180deg);
+}
+
+.rotate:hover > .back{
+    transform: perspective(600px) rotateY(0deg);
+    height: 520px;
+    z-index: 15;
+}
+
+@keyframes hopping{
+    0% {transform: translateX(0px);}
+    10% {transform: translateX(30px) translateY(30px);}
+    20% {transform: translateX(60px) translateY(0px);}
+    30% {transform: translateX(90px) translateY(30px);}
+    40% {transform: translateX(120px) translateY(0px);}
+    50% {transform: translateX(150px) translateY(30px);}
+    60% {transform: translateX(180px) translateY(0px);}
+    70% {transform: translateX(210px) translateY(30px);}
+    80% {transform: translateX(240px) translateY(0px);}
+    90% {transform: translateX(270px) translateY(30px);}
+    100% {transform: translateX(300px) translateY(0px);}
+}
+
+@keyframes dribble{
+    0% {transform: translateX(0px);}
+    5% {transform:  rotate(10deg) translateX(15px) translateY(-60px);}
+    10% {transform: rotate(15deg) translateX(40px) translateY(-10px);}
+    15% {transform: translateX(60px) translateY(-60px);}
+    20% {transform: rotate(15deg) translateX(80px) translateY(-20px);}
+    25% {transform: translateX(100px) translateY(-60px);}
+    30% {transform: rotate(10deg) translateX(120px) translateY(0px);}
+    35% {transform: translateX(140px) translateY(-60px);}
+    40% {transform: translateX(160px) translateY(-15px);}
+    45% {transform: rotate(15deg) translateX(180px) translateY(-60px);}
+    50% {transform: rotate(15deg) translateX(200px) translateY(-10px);}
+    55% {transform: translateX(210px) translateY(-60px);}
+    60% {transform: rotate(15deg) translateX(230px) translateY(-20px);}
+    65% {transform: translateX(245px) translateY(-60px);}
+    70% {transform: rotate(10deg) translateX(255px) translateY(0px);}
+    75% {transform: translateX(270px) translateY(-60px);}
+    80% {transform: translateX(285px) translateY(-15px);}
+    85% {transform: rotate(15deg) translateX(290px) translateY(-60px);}
+    90% {transform: translateX(300px) translateY(-15px);}
+    95% {transform: translateX(310px) translateY(-15px);}
+    100% {transform: translateX(335px) translateY(0px);}
+}
+
+@keyframes throb{
+    0% {transform: scale(.5,.5);}
+    50% {transform: scale(1,1);}
+    100%{transform: scale(.5,.5);}
+}
