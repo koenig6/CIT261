@@ -1,0 +1,27 @@
+h1{
+    font-family: cursive;
+    text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid: 75px / auto;
+  grid-gap: 10px;
+  background-color: orchid;
+  padding: 10px;
+  margin-top: 50px;
+  width: 5px;
+  overflow: hidden;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 20px;
+  font-size: 30px;
+  transition: width 2s;
+}
+
+.grid-container > div:hover{
+    width: 300px;
+}
