@@ -1,6 +1,13 @@
+header, nav, main, body{
+    max-width: 925px;
+    margin: auto; /*centers on page*/
+}
 h1{
     font-family: cursive;
     text-align: center;
+    animation-name: fontChange;
+    animation-play-state: running;
+    animation-iteration-count: infinite;
 }
 
 .grid-container {
@@ -9,19 +16,106 @@ h1{
   grid-gap: 10px;
   background-color: orchid;
   padding: 10px;
-  margin-top: 50px;
-  width: 5px;
-  overflow: hidden;
+
 }
 
 .grid-container > div {
   background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
-  padding: 20px 20px;
+  padding: 20px 0;
   font-size: 30px;
-  transition: width 2s;
 }
 
-.grid-container > div:hover{
-    width: 300px;
+.box{
+    width: 5px;
+    transition: width 2s;
+    transition-timing-function: ease-out;
+    overflow: hidden;
+}
+.box:hover {
+  width: 900px;
+}
+
+#rotate{
+    width: 240px;
+    height: 200px;
+    margin: 30px 31px 30px 30px;
+    float: left;
+}
+
+#rotate > .front{
+    position: absolute;
+    transform: perspective(600px) rotateY(0deg);
+    transition: transform .5s linear 0s;
+    background: rgba(243, 218,247);
+    width: 200px;
+    height: 200px;
+    border-radius: 7px;
+    border-style: solid;
+    backface-visibility: hidden; /*so you can't see other side of card when turns and will see the other card*/
+}
+
+#rotate > .back{
+    position: absolute;
+    transform: perspective(600px) rotateY(180deg);
+    transition: transform .5s linear 0s;
+    background: orchid;
+    width: 200px;
+    height: 200px;
+    font-size: 12px;
+    border-radius: 7px;
+    border-style: solid;
+    backface-visibility: hidden; /*so you can't see other side of card when turns and will see the other card*/
+}
+
+#rotate:hover > .front{
+    transform: perspective(600px) rotateY(-180deg);
+}
+
+#rotate:hover > .back{
+    transform: perspective(600px) rotateY(0deg);
+    z-index: 15;
+}
+
+.flip{
+    padding: 10px;
+    height: 275px;
+}
+
+form{
+    text-align: center;
+}
+ input[type=text], select {
+      width: 85%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #AAABB8;
+      border-radius: 4px;
+      box-sizing: border-box;
+}
+
+input[type=submit] {
+      width: 85%;
+      background-color: #25274D;
+      color: #AAABB8;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: orchid;
+}
+
+@keyframes fontChange{
+    0% {font-family: cursive;}
+    20% {font-family: sans-serif; font: #523C59;}
+    40% {font-family: monospace; font: #6D5077; }
+    60% {font-family: fantasy; font: #A477B3;}
+    80% {font-family: cursive; font: #DA9FEE;}
+    100% {font-family:serif; font: #886395;}
+
 }

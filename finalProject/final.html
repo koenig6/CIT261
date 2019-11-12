@@ -12,11 +12,52 @@
 
         <div class="grid-container">
 
-          <div class="item1">Cupcakes</div>
-          <div class="item2">Cookies</div>
-          <div class="item3">Cakes</div>
+          <div class="box" onclick="cupcakes()">Cupcakes</div>
+          <div class="box" onclick="cookies()">Cookies</div>
+          <div class="box" onclick="cakes()">Cakes</div>
 
         </div>
+
+        <div class="flip">
+              <div id="rotate">
+                  <div class="back"></div>
+                  <div id="one" class="front"></div>
+              </div>
+              <div id="rotate">
+                  <div class="back"></div>
+                  <div id="two" class="front"></div>
+              </div>
+              <div id="rotate">
+                  <div class="back"></div>
+                  <div id="three" class="front"></div>
+              </div>
+        </div>
+
+
+        <form >
+              First name:<br>
+              <input type="text" name="firstname">
+              <br>
+              Last name:<br>
+              <input type="text" name="lastname">
+              <br>
+              Street Address:<br>
+              <input type="text" name="street" >
+              <br>
+              City:<br>
+              <input type="text" name="city" >
+              <br>
+              State:<br>
+              <input type="text" name="state" >
+              <br>
+              Zip:<br>
+              <input type="text" name="firstname" >
+              <br>
+              <br><br>
+              <input type="submit" value="Submit">
+        </form>
+
+
 
     </main>
         <script src="final.js"></script>
