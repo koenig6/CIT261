@@ -8,6 +8,8 @@ h1{
     animation-name: fontChange;
     animation-play-state: running;
     animation-iteration-count: infinite;
+    animation-duration: 20s;
+    animation-timing-function: linear;
 }
 
 .grid-container {
@@ -28,12 +30,21 @@ h1{
 
 .box{
     width: 5px;
-    transition: width 2s;
+    transition: width 3s;
     transition-timing-function: ease-out;
     overflow: hidden;
 }
 .box:hover {
   width: 900px;
+}
+
+label{
+     transition: font-size 2s, transform 2s;
+}
+
+label:hover{
+    transform: translateX(50px);
+    font-size: 30px;
 }
 
 #rotate{
@@ -62,7 +73,7 @@ h1{
     background: orchid;
     width: 200px;
     height: 200px;
-    font-size: 12px;
+    font-size: 22px;
     border-radius: 7px;
     border-style: solid;
     backface-visibility: hidden; /*so you can't see other side of card when turns and will see the other card*/
@@ -112,10 +123,10 @@ input[type=submit]:hover {
 
 @keyframes fontChange{
     0% {font-family: cursive;}
-    20% {font-family: sans-serif; font: #523C59;}
-    40% {font-family: monospace; font: #6D5077; }
-    60% {font-family: fantasy; font: #A477B3;}
-    80% {font-family: cursive; font: #DA9FEE;}
-    100% {font-family:serif; font: #886395;}
+    20% {font-family: sans-serif; color: #DA9FEE;}
+    40% {font-family: monospace; color: #6D5077; }
+    60% {font-family: fantasy; color: #A477B3;}
+    80% {font-family: cursive; color: #523C59;}
+    100% {font-family:serif; color: #886395;}
 
 }
