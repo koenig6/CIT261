@@ -96,6 +96,7 @@ label:hover{
 form{
     text-align: center;
 }
+
  input[type=text], select {
       width: 85%;
       padding: 12px 20px;
