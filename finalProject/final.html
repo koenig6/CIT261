@@ -7,21 +7,21 @@
         <title>CIT 261 Final Project</title>
     </head>
     <body>
-    <h1>Monique's Sweets</h1>
+        <div class='h1'><h1>Monique's Sweets</h1></div>
+
     <main>
 
-        <div class="grid-container">
+        <div class="navbar">
+  <a href="#"  onclick="cakes()">Cake</a>
+  <a href="#"  onclick="cupcakes()">Cupcake</a>
+  <a href="#"  onclick="cookies()">Cookie</a>
 
-          <div class="box" onclick="cupcakes()">Cupcakes - click here for details</div>
-          <div class="box" onclick="cookies()">Cookies - click here for details</div>
-          <div class="box" onclick="cakes()">Cakes - click here for details</div>
-
-        </div>
+</div>
 
         <div class="flip">
               <div id="rotate">
-                  <div class="back">Information about price and options.</div>
-                  <div id="one" class="front"></div>
+                  <div class="back"> </div>
+                  <div id="one" class="front">Hover here to select your dessert</div>
               </div>
               <div id="rotate">
                   <div class="back">Information about price and options.</div>
@@ -33,8 +33,18 @@
               </div>
         </div>
 
+         <input type="text" id="item"/><br><br>
+        <button onclick="addItem()">add item</button>
+        <button onclick="removeItem()">remove item</button>
 
-        <form >
+
+
+    <ul id="myList" contenteditable="true"></ul>
+
+        <div class="order"></div>
+
+
+        <!--<form >
               <label>First name:</label><br>
               <input type="text" name="firstname">
               <br>
@@ -55,7 +65,7 @@
               <br>
               <br><br>
               <input type="submit" value="Submit">
-        </form>
+        </form>-->
 
 
 

@@ -1,7 +1,13 @@
 header, nav, main, body{
-    max-width: 925px;
+    max-width: 930px;
     margin: auto; /*centers on page*/
 }
+
+.h1{
+    height: 50px; /*keeping changes from moving other things on the screen*/
+    margin: 20px 20px;
+}
+
 h1{
     font-family: cursive;
     text-align: center;
@@ -12,23 +18,33 @@ h1{
     animation-timing-function: linear;
 }
 
-.grid-container {
-  display: grid;
-  grid: 75px / auto;
-  grid-gap: 10px;
+.navbar {
+  width: 90%;
   background-color: orchid;
-  padding: 10px;
-
+  overflow: auto;
+  margin: auto;
 }
 
-.grid-container > div {
-  background-color: rgba(255, 255, 255, 0.8);
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  width: 30.4%;
   text-align: center;
-  padding: 20px 0;
-  font-size: 30px;
+  transition: background-color 1s, color 1s, font-size 1s;
+  min-height: 30px;
 }
 
-.box{
+.navbar a:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black;
+  font-size: 25px;
+}
+
+
+/*.box{
     width: 5px;
     transition: width 3s;
     transition-timing-function: ease-out;
@@ -36,7 +52,7 @@ h1{
 }
 .box:hover {
   width: 900px;
-}
+}*/
 
 label{
      transition: font-size 2s, transform 2s;
@@ -125,7 +141,7 @@ input[type=submit]:hover {
 @keyframes fontChange{
     0% {font-family: cursive;}
     20% {font-family: sans-serif; color: #DA9FEE;}
-    40% {font-family: monospace; color: #6D5077; }
+    40% {font-family: monospace; color: #6D5077;}
     60% {font-family: fantasy; color: #A477B3;}
     80% {font-family: cursive; color: #523C59;}
     100% {font-family:serif; color: #886395;}
