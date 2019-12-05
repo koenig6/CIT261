@@ -35,6 +35,7 @@ h1{
   text-align: center;
   transition: background-color 1s, color 1s, font-size 1s;
   min-height: 30px;
+
 }
 
 .navbar a:hover {
@@ -43,16 +44,26 @@ h1{
   font-size: 25px;
 }
 
-
-/*.box{
-    width: 5px;
-    transition: width 3s;
-    transition-timing-function: ease-out;
-    overflow: hidden;
+.btn{
+    background-color: #f7e6fa;
+    border-radius: 12px;
+    padding: 10px 24px;
+    margin: 5px;
 }
-.box:hover {
-  width: 900px;
-}*/
+
+.btn:hover{
+    box-shadow: 1px 1px #53a7ea, 2px 2px #53a7ea, 3px 3px #53a7ea;
+    transform: translateX(-3px);
+}
+
+#input{
+     width: 100px;
+    transition: width .35s ease-in-out;
+}
+#input:focus{
+    width: 450px;
+    box-shadow:1px 1px #53a7ea, 2px 2px #53a7ea, 3px 3px #53a7ea;
+}
 
 label{
      transition: font-size 2s, transform 2s;
