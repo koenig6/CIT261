@@ -13,27 +13,43 @@
     <main>
 
         <div class="navbar">
-  <a href="#"  onclick="cakes()">Cake</a>
-  <a href="#"  onclick="cupcakes()">Cupcake</a>
-  <a href="#"  onclick="cookies()">Cookie</a>
+            <a href="#"  onclick="price()"></a>
+            <a href="#"  onclick="price()">Prices</a>
+            <a href="#"  onclick="price()"></a>
+          <a href="#"  onclick="cakes()">Cake - Ideas</a>
+          <a href="#"  onclick="cupcakes()">Cupcake - Ideas</a>
+          <a href="#"  onclick="cookies()">Cookie - Ideas</a>
 
-</div>
+        </div>
 
         <div class="flip">
               <div id="rotate">
-                  <div class="back"> </div>
-                  <div id="one" class="front">Hover here to select your dessert</div>
+                  <div id="four" class="back"> </div>
+                  <div id="one" class="front">6" Cake (12 servings) - $35<br>
+                                            8" Cake (20 servings) - $60<br>
+                                            10" Cake (28 servings) - $85<br>
+                                            12" Cake (40 servings) - $120<br>
+                                            Half Sheet Cake (24 servings) - $72<br>
+                                            Full Sheet Cake (54 Servings) - $150<br>
+                                            Extra $50 for Carved Cakes
+                  </div>
               </div>
               <div id="rotate">
-                  <div class="back">Information about price and options.</div>
-                  <div id="two" class="front"></div>
+                  <div id="five" class="back">
+                  </div>
+                  <div id="two" class="front">Basic Cupcakes  - $2.00 per cupcake<br>
+                                    Themed Decorated Cupcakes or Toppers - $2.25 per cupcake<br><br>
+                                    Specialty Cupcakes - $2.50 per cupcake (includes fillings or Cookies and Cream Cupcake, Chocolate Chip Cookie Dough cupcake, German Chocolate Cupcakes, etc.)</div>
               </div>
               <div id="rotate">
-                  <div class="back">Information about price and options.</div>
-                  <div id="three" class="front"></div>
+                  <div id="six" class="back"></div>
+                  <div id="three" class="front">Mini Cookies - $1.50 per Cookie<br>
+                                                2-3 Colors - $3.00 per Cookie<br>
+                                                4+ Colors - $3.20 per Cookie<br></div>
               </div>
         </div>
 
+        <h2>Please Enter Instructions For Your Order Below </h2>
          <input type="text" id="input"/><br><br>
         <button class='btn' onclick="addItem()">Add Instructions</button>
         <button class='btn' onclick="removeItem()">Remove Instructions</button>
