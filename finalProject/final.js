@@ -101,14 +101,16 @@ colorPicker.on(["color:init", "color:change"], function(color){
     "hex: " + color.hexString,
     //"rgb: " + color.rgbString,
   ].join("<br>");
+
      savingColor = color.hexString;
+    console.log('inside colorPicker' + savingColor);
 });
 
 console.log(savingColor);
 function addColor()
 {
-    //console.log('button pushed');
-    //console.log('savingColor:' + savingColor);
+    console.log('button pushed');
+    console.log('savingColor:' + savingColor);
 
     var iDiv = document.getElementById('colors');//identify where new div will go
 
