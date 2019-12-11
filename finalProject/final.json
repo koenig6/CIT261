@@ -5,7 +5,7 @@
 
   "members" : [
     {
-      "name" : "Douglas",
+      "name" : "Cake",
       "age" : 43,
       "birthPlace" : "Marrietta, GA",
       "allAboutMe" : [
@@ -15,7 +15,7 @@
       ]
     },
     {
-      "name" : "Jody",
+      "name" : "Cupcake",
       "age" : 41,
       "birthPlace" : "Seaside, OR",
       "allAboutMe" : [
@@ -25,7 +25,7 @@
       ]
     },
       {
-      "name" : "Samantha",
+      "name" : "Cookies",
       "age" : 14,
       "birthPlace" : "Vancouver, WA",
       "allAboutMe" : [
