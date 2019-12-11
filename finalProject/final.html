@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="final.css">
         <script src="https://cdn.jsdelivr.net/npm/@jaames/iro/dist/iro.min.js"></script>
+        <script src="final.js"></script>
         <title>CIT 261 Final Project</title>
     </head>
     <body>
@@ -19,6 +20,13 @@
           <a href="#"  onclick="cakes()">Cake - Ideas</a>
           <a href="#"  onclick="cupcakes()">Cupcake - Ideas</a>
           <a href="#"  onclick="cookies()">Cookie - Ideas</a>
+
+
+
+
+
+
+
 
         </div>
 
@@ -58,22 +66,29 @@
 
     <ul id="myList" contenteditable="true"></ul>
 
-      <div id="element">Testing</div>
+
 
      <div class="wrap"><h2>Select the color(s) you would like for your dessert</h2>
       <div class="half">
-        <div onmouseup='pickColor()' class="colorPicker"></div>
+        <div class="colorPicker"></div>
       </div>
       <div class="half readout">
 
         <span class="title">Selected Color:</span>
-        <div id="values"></div>
+
+            <div id="values"></div>
+
+
+
       </div>
     </div>
+         <button class="btn" onclick="addColor()">Add your selected color</button>
+         <div id="colors"  contenteditable="true"></div>
+
 
 
     </main>
-        <script src="final.js"></script>
+
     </body>
 
 </html>

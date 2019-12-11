@@ -1,67 +1,69 @@
 {
-    "foodName": "Koenig",
-    "homeTown": "Canton",
-    "established": 1999,
+  "familyName" : "Koenig",
+  "homeTown" : "Canton",
+  "established" : 1999,
 
-    "items": [{
-            "name": "Andes",
-            "age": 43,
-            "birthPlace": "Marrietta, GA",
-            "allAboutMe": [
-                "Plays computer games",
-                "Loves to tinker with technology",
-                "Youngest of two brothers"
-            ]
-        },
-        {
-            "name": "Jody",
-            "age": 41,
-            "birthPlace": "Seaside, OR",
-            "allAboutMe": [
-                "Part-time student",
-                "Loves to read books",
-                "Youngest of three sisters"
-            ]
-        },
-        {
-            "name": "Samantha",
-            "age": 14,
-            "birthPlace": "Vancouver, WA",
-            "allAboutMe": [
-                "Plays french horn",
-                "Always on the phone",
-                "Boy crazy"
-            ]
-        },
-        {
-            "name": "Zachary",
-            "age": 12,
-            "birthPlace": "Vancouver, WA",
-            "allAboutMe": [
-                "Loves to read",
-                "Plays the bassoon",
-                "Quick witted"
-            ]
-        },
-        {
-            "name": "Lily",
-            "age": 10,
-            "birthPlace": "Vancouver, WA",
-            "allAboutMe": [
-                "Training to be a ninja",
-                "Blanket stealer",
-                "Loves purple"
-            ]
-        },
-        {
-            "name": "Grant",
-            "age": 8,
-            "birthPlace": "Vancouver, WA",
-            "allAboutMe": [
-                "Loves DogMan",
-                "Wears PJ's under clothes",
-                "Fruit snack lover"
-            ]
-        }
-    ]
+  "members" : [
+    {
+      "name" : "Douglas",
+      "age" : 43,
+      "birthPlace" : "Marrietta, GA",
+      "allAboutMe" : [
+        "Plays computer games",
+        "Loves to tinker with technology",
+        "Youngest of two brothers"
+      ]
+    },
+    {
+      "name" : "Jody",
+      "age" : 41,
+      "birthPlace" : "Seaside, OR",
+      "allAboutMe" : [
+        "Part-time student",
+        "Loves to read books",
+        "Youngest of three sisters"
+      ]
+    },
+      {
+      "name" : "Samantha",
+      "age" : 14,
+      "birthPlace" : "Vancouver, WA",
+      "allAboutMe" : [
+        "Plays french horn",
+        "Always on the phone",
+        "Boy crazy"
+      ]
+    },
+      {
+      "name" : "Zachary",
+      "age" : 12,
+      "birthPlace" : "Vancouver, WA",
+      "allAboutMe" : [
+        "Loves to read",
+        "Plays the bassoon",
+        "Quick witted"
+      ]
+    },
+      {
+      "name" : "Lily",
+      "age" : 10,
+      "birthPlace" : "Vancouver, WA",
+      "allAboutMe" : [
+        "Training to be a ninja",
+        "Blanket stealer",
+        "Loves purple"
+      ]
+    },
+    {
+      "name" : "Grant",
+      "age" : 8,
+      "birthPlace" : "Vancouver, WA",
+      "allAboutMe" : [
+        "Loves DogMan",
+        "Wears PJ's under clothes",
+        "Fruit snack lover"
+      ]
+    }
+  ]
 }
+

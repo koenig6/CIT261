@@ -48,7 +48,7 @@ function cakes()
 
 function price()
 {
-     document.getElementById("one").innerHTML="6\" Cake (12 servings) - $35<br>8\" Cake (20 servings) - $60<br>10\" Cake (28 servings) - <br>12\" Cake (40 servings) - $120<br>Half Sheet Cake (24 servings) - $72<br>Full Sheet Cake (54 Servings) - $150<br>Extra $50 for Carved Cakes ";
+     document.getElementById("one").innerHTML="6\" Cake (12 servings) - $35<br>8\" Cake (20 servings) - $60<br>10\" Cake (28 servings) -$85<br>12\" Cake (40 servings) - $120<br>Half Sheet Cake (24 servings) - $72<br>Full Sheet Cake (54 Servings) - $150<br>Extra $50 for Carved Cakes ";
 
      document.getElementById("two").innerHTML="Basic Cupcakes  - $2.00 per cupcake<br>Themed Decorated Cupcakes or Toppers - $2.25 per cupcake<br><br>Specialty Cupcakes - $2.50 per cupcake (includes fillings or Cookies and Cream Cupcake, Chocolate Chip Cookie Dough cupcake, German Chocolate Cupcakes, etc.)";
 
@@ -63,11 +63,15 @@ function price()
 
 function addItem()
 {
-    var ul = document.getElementById("myList");
+    var ul = document.getElementById("myList"); //where list will go
+
     var newItem = document.getElementById("input"); //get text from box
+
     var li = document.createElement("li"); // create li
-    li.setAttribute('id',input.value);
-    li.appendChild(document.createTextNode(input.value)); // add to list
+
+    li.setAttribute('id',input.value); // gives li an id
+
+    li.appendChild(document.createTextNode(input.value)); // puts text from textbox in the li
     ul.appendChild(li); // add to list
 }
 
@@ -90,36 +94,56 @@ var colorPicker = new iro.ColorPicker(".colorPicker", {
 
 var values = document.getElementById("values");
 
+var savingColor;
+
 colorPicker.on(["color:init", "color:change"], function(color){
   values.innerHTML = [
     "hex: " + color.hexString,
     //"rgb: " + color.rgbString,
   ].join("<br>");
+     savingColor = color.hexString;
 });
 
+console.log(savingColor);
+function addColor()
+{
+    //console.log('button pushed');
+    //console.log('savingColor:' + savingColor);
 
+    var iDiv = document.getElementById('colors');//identify where new div will go
 
-    var textbox_id = "color";
-	var textbox = document.getElementById(textbox_id);
+    var innerDiv = document.createElement('div');//create new div
 
-	var ul_id = "values";
-	var div = document.getElementById(ul_id);
+    innerDiv.setAttribute('class', 'colorSelect');
+    innerDiv.setAttribute('id', savingColor); //create new div an id
+    innerDiv.style.background = savingColor; //give new div its color
+    innerDiv.style.height = '50px';
+    innerDiv.style.width = '150px';
 
-	// We should verify values here before we use them...
-	var color = textbox.value;
-	div.style.color = color;
+    innerDiv.appendChild(document.createTextNode('Click here to note what color is for')); // what I want div to say
 
-
-
-
-
-var el = document.getElementById('element');
-var body = document.getElementsByTagName('body');
-el.innerHTML = '<p><a id="clickme" href="#">Click me</a></p>';
-document.getElementById('clickme').onclick = function (e) {
-    e.preventDefault();
-    document.body.innerHTML +='<div style="position:absolute;width:100%;height:100%;opacity:0.3;z-index:100;background:"' + div.style.color =  ></div>';
+    iDiv.appendChild(innerDiv);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1,13 +1,13 @@
 
 function changeBackgroundColor() {
-	var textbox_id = "txtColor";
+	var textbox_id = "txtColor"; //id of textbox
 	var textbox = document.getElementById(textbox_id);
 
-	var div_id = "div2";
+	var div_id = "div2"; //id of textarea
 	var div = document.getElementById(div_id);
 
 	// We should verify values here before we use them...
-	var color = textbox.value;
+	var color = textbox.value;  //from line 4
 	div.style.backgroundColor = color;
 
 }
