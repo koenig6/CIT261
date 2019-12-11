@@ -93,6 +93,35 @@ var values = document.getElementById("values");
 colorPicker.on(["color:init", "color:change"], function(color){
   values.innerHTML = [
     "hex: " + color.hexString,
-    "rgb: " + color.rgbString,
+    //"rgb: " + color.rgbString,
   ].join("<br>");
 });
+
+
+
+    var textbox_id = "color";
+	var textbox = document.getElementById(textbox_id);
+
+	var ul_id = "values";
+	var div = document.getElementById(ul_id);
+
+	// We should verify values here before we use them...
+	var color = textbox.value;
+	div.style.color = color;
+
+
+
+
+
+var el = document.getElementById('element');
+var body = document.getElementsByTagName('body');
+el.innerHTML = '<p><a id="clickme" href="#">Click me</a></p>';
+document.getElementById('clickme').onclick = function (e) {
+    e.preventDefault();
+    document.body.innerHTML +='<div style="position:absolute;width:100%;height:100%;opacity:0.3;z-index:100;background:"' + div.style.color =  ></div>';
+}
+
+
+
+
+
