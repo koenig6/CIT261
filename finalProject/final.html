@@ -31,7 +31,7 @@
         </section>
 
         <script>
-            var header = document.querySelector('header');
+            //var header = document.querySelector('header');
             var section = document.querySelector('section');
             var requestURL = 'https://koenig6.github.io/CIT261/finalProject/final.json';
             var request = new XMLHttpRequest();
@@ -40,10 +40,10 @@
             request.send();
             request.onload = function() {
                 var familyMembers = request.response;
-                populateHeader(familyMembers);
+                //populateHeader(familyMembers);
                 showFamily(familyMembers);
             }
-            function populateHeader(jsonObj) {
+            /*function populateHeader(jsonObj) {
                 console.log('jsonObj in header: ' + jsonObj);
                 var myH1 = document.createElement('h1');
                 myH1.textContent = jsonObj['familyName'];
@@ -52,7 +52,7 @@
                 var myPara = document.createElement('p');
                 myPara.textContent = 'Hometown: ' + jsonObj['homeTown'] + ' // Established: ' + jsonObj['established'];
                 header.appendChild(myPara);
-            }
+            }*/
 
             function showFamily(jsonObj) {
                 console.log('jsonObj in showFamily: ' + jsonObj);
