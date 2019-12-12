@@ -121,6 +121,7 @@ function addColor()
     innerDiv.style.background = savingColor; //give new div its color
     innerDiv.style.height = '50px';
     innerDiv.style.width = '150px';
+    innerDiv.style.margin = '10px';
 
     innerDiv.appendChild(document.createTextNode('Click here to note what color is for')); // what I want div to say
 
