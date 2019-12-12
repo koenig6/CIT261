@@ -7,7 +7,7 @@
     {
       "name" : "Cake",
 
-      "birthPlace" : "Marrietta, GA",
+
       "pricing" : [
                 "6\" Cake (12 servings) - $35",
                 "8\" Cake (20 servings) - $60",
@@ -22,7 +22,7 @@
     {
       "name" : "Cupcake",
 
-      "birthPlace" : "Seaside, OR",
+
       "pricing" : [
                 "$2.00 per basic cupcake",
                 "$2.25 per Themed Decorated Cupcakes or Toppers",
@@ -33,7 +33,7 @@
       {
       "name" : "Cookies",
 
-      "birthPlace" : "Vancouver, WA",
+
       "pricing" : [
                 "$1.50 per Mini Cookies",
                 "$3.00 per 2-3 Color Cookies",

@@ -58,13 +58,13 @@
                 for (var i = 0; i < family.length; i++) {
                     var myArticle = document.createElement('article');
                     var myH2 = document.createElement('h2');
-                    var myPara1 = document.createElement('p');
+
 
                     var myPara3 = document.createElement('p');
                     var myList = document.createElement('ul');
 
                     myH2.textContent = family[i].name;
-                    myPara1.textContent = 'Birth Place: ' + family[i].birthPlace;
+
 
                     myPara3.textContent = 'Pricing:';
 
@@ -76,7 +76,7 @@
                     }
 
                     myArticle.appendChild(myH2);
-                    myArticle.appendChild(myPara1);
+
 
                     myArticle.appendChild(myPara3);
                     myArticle.appendChild(myList);
