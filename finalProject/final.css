@@ -114,6 +114,7 @@ img{
 
 .half{
     float: left;
+    clear: right;
 }
 
 .colorSelect{
@@ -131,7 +132,7 @@ img{
       border-radius: 4px;
       box-sizing: border-box;
       width: 200px;
-     transition: width .35s ease-in-out;
+      transition: width .35s ease-in-out;
 }
 
 #input:focus{

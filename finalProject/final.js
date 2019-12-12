@@ -83,6 +83,19 @@ function removeItem()
     ul.removeChild(li);
 }
 
+function changeFont() {
+	var textbox_id = "font";
+	var textbox = document.getElementById('input');
+
+	var ul_id = "myList";
+	var div = document.getElementById(ul_id);
+
+	// We should verify values here before we use them...
+	var font = textbox.value;
+	div.style.fontFamily = font;
+
+}
+
 // Create a new color picker instance
 // https://iro.js.org/guide.html#getting-started
 var colorPicker = new iro.ColorPicker(".colorPicker", {

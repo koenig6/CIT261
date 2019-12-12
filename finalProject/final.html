@@ -11,134 +11,137 @@
     <body>
         <div class='h1'><h1>Monique's Sweets</h1></div>
 
-    <main>
+        <main>
 
-        <div class="navbar">
-            <a href="#"  onclick="price()"></a>
-            <a href="#"  onclick="price()">Prices</a>
-            <a href="#"  onclick="price()"></a>
-          <a href="#"  onclick="cakes()">Cake - Ideas</a>
-          <a href="#"  onclick="cupcakes()">Cupcake - Ideas</a>
-          <a href="#"  onclick="cookies()">Cookie - Ideas</a>
+            <div class="navbar">
+                <a href="#"  onclick="price()"></a>
+                <a href="#"  onclick="price()">Prices</a>
+                <a href="#"  onclick="price()"></a>
+                <a href="#"  onclick="cakes()">Cake - Ideas</a>
+                <a href="#"  onclick="cupcakes()">Cupcake - Ideas</a>
+                <a href="#"  onclick="cookies()">Cookie - Ideas</a>
+            </div>
+
+            <section class="flip"> </section>
+
+            <script>
+
+                var section = document.querySelector('section');
+                var requestURL = 'https://koenig6.github.io/CIT261/finalProject/final.json';
+                var request = new XMLHttpRequest();
+                request.open('GET', requestURL);
+                request.responseType = 'json';
+                request.send();
+                request.onload = function() {
+                    var familyMembers = request.response;
+                    showFamily(familyMembers);
+                }
+
+                function showFamily(jsonObj) {
+                    console.log('jsonObj in showFamily: ' + jsonObj);
+                    var family = jsonObj['members'];
+
+                    var count = 1;
+                    for (var i = 0; i < family.length; i++) {
+                        var myArticle = document.createElement('article');
+                        myArticle.setAttribute('id', 'rotate');
+
+                        var myFrontDiv = document.createElement('div')
+                        myFrontDiv.setAttribute('class', 'back');
+                        myFrontDiv.setAttribute('id', count++ );
+                        myFrontDiv.style.height = '365px';
+
+                        var mySecondDiv = document.createElement('div')
+                        mySecondDiv.setAttribute('class', 'front');
+                        mySecondDiv.setAttribute('id', count++);
+                        mySecondDiv.style.height = '365px';
+
+                        var myH2 = document.createElement('h2');
+                        var myPara3 = document.createElement('p');
+                        var myList = document.createElement('ul');
+
+                        myH2.textContent = family[i].name;
+                        myPara3.textContent = 'Pricing:';
+
+                        var pricing = family[i].pricing;
+                        for (var j = 0; j < pricing.length; j++) {
+                            var listItem = document.createElement('li');
+                            listItem.textContent = pricing[j];
+                            myList.appendChild(listItem);
+                        }
+
+                        myArticle.appendChild(myFrontDiv);
+                        myArticle.appendChild(mySecondDiv);
+                        mySecondDiv.appendChild(myH2);
+                        mySecondDiv.appendChild(myPara3);
+                        mySecondDiv.appendChild(myList);
+
+                        section.appendChild(myArticle);
+                    }
+                }
+
+            </script>
+
+            <!--<div class="flip">
+                  <div id="rotate">
+                      <div id="four" class="back"> </div>
+                      <div id="one" class="front">6" Cake (12 servings) - $35<br>
+                                                8" Cake (20 servings) - $60<br>
+                                                10" Cake (28 servings) - $85<br>
+                                                12" Cake (40 servings) - $120<br>
+                                                Half Sheet Cake (24 servings) - $72<br>
+                                                Full Sheet Cake (54 Servings) - $150<br>
+                                                Extra $50 for Carved Cakes
+                      </div>
+                  </div>
+                  <div id="rotate">
+                      <div id="five" class="back">
+                      </div>
+                      <div id="two" class="front">Basic Cupcakes  - $2.00 per cupcake<br>
+                                        Themed Decorated Cupcakes or Toppers - $2.25 per cupcake<br><br>
+                                        Specialty Cupcakes - $2.50 per cupcake (includes fillings or Cookies and Cream Cupcake, Chocolate Chip Cookie Dough cupcake, German Chocolate Cupcakes, etc.)</div>
+                  </div>
+                  <div id="rotate">
+                      <div id="six" class="back"></div>
+                      <div id="three" class="front">Mini Cookies - $1.50 per Cookie<br>
+                                                    2-3 Colors - $3.00 per Cookie<br>
+                                                    4+ Colors - $3.20 per Cookie<br></div>
+                  </div>
+            </div>-->
+
+            <h2>Please Enter Instructions For Your Order Below.</h2>
+            <h4>To edit instructions just click on your preentered text.<br>
+                After entering instructions, type the font style you would like your letters written in and click the font style button.
+            </h4>
+            <input type="text" id="input"/><br><br>
+            <button class='btn' onclick="addItem()">Add Instructions</button>
+            <button class='btn' onclick="removeItem()">Remove Instructions</button>
+            <button class='btn' onclick="changeFont()">Font Style</button>
+
+            <ul id="myList" contenteditable="true"></ul>
+
+
+
+            <div class="wrap"><h2>Select the color(s) you would like for your dessert</h2>
+          <div class="half">
+            <div class="colorPicker"></div>
+          </div>
+          <div class="half readout">
+
+            <span class="title">Selected Color:</span>
+
+                <div id="values"></div>
+
+
+          </div>
         </div>
 
-        <section class="flip"> </section>
-
-        <script>
-
-            var section = document.querySelector('section');
-            var requestURL = 'https://koenig6.github.io/CIT261/finalProject/final.json';
-            var request = new XMLHttpRequest();
-            request.open('GET', requestURL);
-            request.responseType = 'json';
-            request.send();
-            request.onload = function() {
-                var familyMembers = request.response;
-                showFamily(familyMembers);
-            }
-
-            function showFamily(jsonObj) {
-                console.log('jsonObj in showFamily: ' + jsonObj);
-                var family = jsonObj['members'];
-
-                var count = 1;
-                for (var i = 0; i < family.length; i++) {
-                    var myArticle = document.createElement('article');
-                    myArticle.setAttribute('id', 'rotate');
-
-                    var myFrontDiv = document.createElement('div')
-                    myFrontDiv.setAttribute('class', 'back');
-                    myFrontDiv.setAttribute('id', count++ );
-                    myFrontDiv.style.height = '365px';
-
-                    var mySecondDiv = document.createElement('div')
-                    mySecondDiv.setAttribute('class', 'front');
-                    mySecondDiv.setAttribute('id', count++);
-                    mySecondDiv.style.height = '365px';
-
-                    var myH2 = document.createElement('h2');
-                    var myPara3 = document.createElement('p');
-                    var myList = document.createElement('ul');
-
-                    myH2.textContent = family[i].name;
-                    myPara3.textContent = 'Pricing:';
-
-                    var pricing = family[i].pricing;
-                    for (var j = 0; j < pricing.length; j++) {
-                        var listItem = document.createElement('li');
-                        listItem.textContent = pricing[j];
-                        myList.appendChild(listItem);
-                    }
-
-                    myArticle.appendChild(myFrontDiv);
-                    myArticle.appendChild(mySecondDiv);
-                    mySecondDiv.appendChild(myH2);
-                    mySecondDiv.appendChild(myPara3);
-                    mySecondDiv.appendChild(myList);
-
-                    section.appendChild(myArticle);
-                }
-            }
-
-        </script>
-
-        <!--<div class="flip">
-              <div id="rotate">
-                  <div id="four" class="back"> </div>
-                  <div id="one" class="front">6" Cake (12 servings) - $35<br>
-                                            8" Cake (20 servings) - $60<br>
-                                            10" Cake (28 servings) - $85<br>
-                                            12" Cake (40 servings) - $120<br>
-                                            Half Sheet Cake (24 servings) - $72<br>
-                                            Full Sheet Cake (54 Servings) - $150<br>
-                                            Extra $50 for Carved Cakes
-                  </div>
-              </div>
-              <div id="rotate">
-                  <div id="five" class="back">
-                  </div>
-                  <div id="two" class="front">Basic Cupcakes  - $2.00 per cupcake<br>
-                                    Themed Decorated Cupcakes or Toppers - $2.25 per cupcake<br><br>
-                                    Specialty Cupcakes - $2.50 per cupcake (includes fillings or Cookies and Cream Cupcake, Chocolate Chip Cookie Dough cupcake, German Chocolate Cupcakes, etc.)</div>
-              </div>
-              <div id="rotate">
-                  <div id="six" class="back"></div>
-                  <div id="three" class="front">Mini Cookies - $1.50 per Cookie<br>
-                                                2-3 Colors - $3.00 per Cookie<br>
-                                                4+ Colors - $3.20 per Cookie<br></div>
-              </div>
-        </div>-->
-
-        <h2>Please Enter Instructions For Your Order Below. To edit instructions just click on your preentered text. </h2>
-         <input type="text" id="input"/><br><br>
-        <button class='btn' onclick="addItem()">Add Instructions</button>
-        <button class='btn' onclick="removeItem()">Remove Instructions</button>
+             <button class="btn" onclick="addColor()">Add your selected color</button>
+             <div id="colors"  contenteditable="true"></div>
 
 
 
-    <ul id="myList" contenteditable="true"></ul>
-
-
-
-     <div class="wrap"><h2>Select the color(s) you would like for your dessert</h2>
-      <div class="half">
-        <div class="colorPicker"></div>
-      </div>
-      <div class="half readout">
-
-        <span class="title">Selected Color:</span>
-
-            <div id="values"></div>
-
-
-      </div>
-    </div>
-         <button class="btn" onclick="addColor()">Add your selected color</button>
-         <div id="colors"  contenteditable="true"></div>
-
-
-
-    </main>
+        </main>
          <script src="final.js"></script> <!--this needs to stay here-->
     </body>
 
