@@ -14,6 +14,18 @@
 
       ]
     },
+      {
+      "name" : "Cake",
+      "pricing" : [
+                "6\" Cake (12 servings) - $35",
+                "8\" Cake (20 servings) - $60",
+                "10\" Cake (28 servings) - $85",
+                "12\" Cake (40 servings) - $120",
+                "Half Sheet Cake (24 servings) - $72",
+                "Full Sheet Cake (54 Servings) - $150",
+                "Extra $50 for Carved Cakes "
+      ]
+    },
     {
       "name" : "Cupcake",
       "pricing" : [
@@ -23,13 +35,28 @@
 
       ]
     },
+      {
+      "name" : "Cupcake",
+      "pricing" : [
+          "$2.00 per basic cupcake",
+                "$2.25 per Themed Decorated Cupcakes or Toppers",
+                "$2.50 per Specialty Cupcakes (includes fillings or Cookies and Cream Cupcake, Chocolate Chip Cookie Dough cupcake, German Chocolate Cupcakes, etc.) "
+      ]
+    },
+      {
+      "name" : "Cookies",
+      "pricing" : [
+                "$1.50 per Mini Cookies",
+                "$3.00 per 2-3 Color Cookies",
+                "$3.20 per 4+ Color Cookies"
+      ]
+    },
     {
       "name" : "Cookies",
       "pricing" : [
                 "$1.50 per Mini Cookies",
                 "$3.00 per 2-3 Color Cookies",
                 "$3.20 per 4+ Color Cookies"
-
       ]
     }
   ]
