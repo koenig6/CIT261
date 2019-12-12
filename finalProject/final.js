@@ -1,6 +1,6 @@
 function cupcakes()
 {
-    document.getElementById("one").innerHTML="<img src='img/andes.jpg' height=200px width=200px />";
+    document.getElementById("1").innerHTML="<img src='img/andes.jpg' height=200px width=200px />";
 
     document.getElementById("two").innerHTML="<img src='img/bear.jpg' height=200px width=200px />";
 
@@ -16,7 +16,7 @@ function cupcakes()
 
 function cookies()
 {
-    document.getElementById("one").innerHTML="<img src='img/hearts.jpg' height=200px width=200px />";
+    document.getElementById("1").innerHTML="<img src='img/hearts.jpg' height=200px width=200px />";
 
     document.getElementById("two").innerHTML="<img src='img/onsie.jpg' height=200px width=200px />";
 
@@ -32,7 +32,7 @@ function cookies()
 
 function cakes()
 {
-    document.getElementById("one").innerHTML="<img src='img/marbeling.jpg' height=200px width=200px />";
+    document.getElementById("1").innerHTML="<img src='img/marbeling.jpg' height=200px width=200px />";
 
     document.getElementById("two").innerHTML="<img src='img/hat.jpg' height=200px width=200px />";
 
@@ -48,7 +48,7 @@ function cakes()
 
 function price()
 {
-     document.getElementById("one").innerHTML="6\" Cake (12 servings) - $35<br>8\" Cake (20 servings) - $60<br>10\" Cake (28 servings) -$85<br>12\" Cake (40 servings) - $120<br>Half Sheet Cake (24 servings) - $72<br>Full Sheet Cake (54 Servings) - $150<br>Extra $50 for Carved Cakes ";
+     document.getElementById("1").innerHTML="6\" Cake (12 servings) - $35<br>8\" Cake (20 servings) - $60<br>10\" Cake (28 servings) -$85<br>12\" Cake (40 servings) - $120<br>Half Sheet Cake (24 servings) - $72<br>Full Sheet Cake (54 Servings) - $150<br>Extra $50 for Carved Cakes ";
 
      document.getElementById("two").innerHTML="Basic Cupcakes  - $2.00 per cupcake<br>Themed Decorated Cupcakes or Toppers - $2.25 per cupcake<br><br>Specialty Cupcakes - $2.50 per cupcake (includes fillings or Cookies and Cream Cupcake, Chocolate Chip Cookie Dough cupcake, German Chocolate Cupcakes, etc.)";
 
