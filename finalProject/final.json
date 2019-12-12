@@ -8,7 +8,7 @@
       "name" : "Cake",
       "age" : 43,
       "birthPlace" : "Marrietta, GA",
-      "allAboutMe" : [
+      "pricing" : [
                 "6\" Cake (12 servings) - $35",
                 "8\" Cake (20 servings) - $60",
                 "10\" Cake (28 servings) - $85",
@@ -23,7 +23,7 @@
       "name" : "Cupcake",
       "age" : 41,
       "birthPlace" : "Seaside, OR",
-      "allAboutMe" : [
+      "pricing" : [
                 "$2.00 per basic cupcake",
                 "$2.25 per Themed Decorated Cupcakes or Toppers",
                 "$2.50 per Specialty Cupcakes (includes fillings or Cookies and Cream Cupcake, Chocolate Chip Cookie Dough cupcake, German Chocolate Cupcakes, etc.) "
@@ -34,7 +34,7 @@
       "name" : "Cookies",
       "age" : 14,
       "birthPlace" : "Vancouver, WA",
-      "allAboutMe" : [
+      "pricing" : [
                 "$1.50 per Mini Cookies",
                 "$3.00 per 2-3 Color Cookies",
                 "$3.20 per 4+ Color Cookies"
