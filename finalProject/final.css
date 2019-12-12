@@ -18,6 +18,10 @@ h1{
     animation-timing-function: linear;
 }
 
+h2{
+    text-align: center;
+}
+
 .navbar {
   width: 90%;
   background-color: orchid;
@@ -35,7 +39,10 @@ h1{
   text-align: center;
   transition: background-color 1s, color 1s, font-size 1s;
   min-height: 30px;
+}
 
+img{
+    padding-top: 50px;
 }
 
 .navbar a:hover {
@@ -60,6 +67,7 @@ h1{
      width: 100px;
     transition: width .35s ease-in-out;
 }
+
 #input:focus{
     width: 450px;
     box-shadow:1px 1px #53a7ea, 2px 2px #53a7ea, 3px 3px #53a7ea;
@@ -155,6 +163,12 @@ input[type=submit]:hover {
     background-color: orchid;
 }
 
+li{
+    animation-name: shake;
+    animation-duration: .3s;
+    animation-iteration-count: 1;
+}
+
 @keyframes fontChange{
     0% {font-family: cursive;}
     20% {font-family: sans-serif; color: #DA9FEE;}
@@ -169,4 +183,18 @@ input[type=submit]:hover {
     0%{left: -300px; opacity: 0; border-radius: 45px;}
     50%{left: -150px; opacity: 0.5; border-radius: 15px;}
     100%{left: 0; opacity: 1;}
+}
+
+@keyframes shake{
+ 0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -1px) rotate(-0deg); }
+  20% { transform: translate(-1px, 0px) rotate(0deg); }
+  30% { transform: translate(1px, 1px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(0deg); }
+  50% { transform: translate(-1px, 1px) rotate(-0deg); }
+  60% { transform: translate(-1px, 1px) rotate(0deg); }
+  70% { transform: translate(1px, 1px) rotate(-0deg); }
+  80% { transform: translate(-1px, -1px) rotate(0deg); }
+  90% { transform: translate(1px, 1px) rotate(0deg); }
+  100% { transform: translate(1px, -1px) rotate(-0deg); }
 }
