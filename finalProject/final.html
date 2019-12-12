@@ -58,23 +58,26 @@
                 for (var i = 0; i < family.length; i++) {
                     var myArticle = document.createElement('article');
                     var myH2 = document.createElement('h2');
-
+                    var myPara1 = document.createElement('p');
+                    var myPara2 = document.createElement('p');
                     var myPara3 = document.createElement('p');
                     var myList = document.createElement('ul');
 
                     myH2.textContent = family[i].name;
+                    myPara1.textContent = 'Birth Place: ' + family[i].birthPlace;
+                    myPara2.textContent = 'Age: ' + family[i].age;
+                    myPara3.textContent = 'All about me:';
 
-                    myPara3.textContent = 'Pricing:';
-
-                    var pricing = family[i].pricing;
-                    for (var j = 0; j < pricing.length; j++) {
+                    var allAboutMe = family[i].allAboutMe;
+                    for (var j = 0; j < allAboutMe.length; j++) {
                         var listItem = document.createElement('li');
-                        listItem.textContent = pricing[j];
+                        listItem.textContent = allAboutMe[j];
                         myList.appendChild(listItem);
                     }
 
                     myArticle.appendChild(myH2);
-
+                    myArticle.appendChild(myPara1);
+                    myArticle.appendChild(myPara2);
                     myArticle.appendChild(myPara3);
                     myArticle.appendChild(myList);
 
@@ -83,7 +86,6 @@
             }
 
         </script>
-
 
 
 
