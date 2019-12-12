@@ -76,9 +76,10 @@ label:hover{
 
 #rotate{
     width: 240px;
-    height: 200px;
+    height: 365px;
     margin: 30px 31px 30px 30px;
     float: left;
+    vertical-align: middle;
 }
 
 #rotate > .front{
@@ -91,6 +92,7 @@ label:hover{
     border-radius: 7px;
     border-style: solid;
     backface-visibility: hidden; /*so you can't see other side of card when turns and will see the other card*/
+    text-align: center;
 }
 
 #rotate > .back{
@@ -104,6 +106,7 @@ label:hover{
     border-radius: 7px;
     border-style: solid;
     backface-visibility: hidden; /*so you can't see other side of card when turns and will see the other card*/
+    text-align: center;
 }
 
 #rotate:hover > .front{
