@@ -112,8 +112,13 @@ img{
     height: 440px;
 }
 
-.colorSelect{
+.half{
     float: left;
+}
+
+.colorSelect{
+    float: right;
+    clear: left;
     text-align: center;
     animation-name: colorEntrance;
     animation-duration: 2s;
