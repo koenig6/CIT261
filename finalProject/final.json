@@ -6,7 +6,7 @@
   "members" : [
     {
       "name" : "Cake",
-      "age" : 43,
+
       "birthPlace" : "Marrietta, GA",
       "pricing" : [
                 "6\" Cake (12 servings) - $35",
@@ -21,7 +21,7 @@
     },
     {
       "name" : "Cupcake",
-      "age" : 41,
+
       "birthPlace" : "Seaside, OR",
       "pricing" : [
                 "$2.00 per basic cupcake",
@@ -32,7 +32,7 @@
     },
       {
       "name" : "Cookies",
-      "age" : 14,
+
       "birthPlace" : "Vancouver, WA",
       "pricing" : [
                 "$1.50 per Mini Cookies",
