@@ -1,13 +1,11 @@
 {
-  "familyName" : "Koenig",
-  "homeTown" : "Canton",
-  "established" : 1999,
+ // "familyName" : "Koenig",
+  //"homeTown" : "Canton",
+  //"established" : 1999,
 
   "members" : [
     {
       "name" : "Cake",
-
-
       "pricing" : [
                 "6\" Cake (12 servings) - $35",
                 "8\" Cake (20 servings) - $60",
@@ -21,8 +19,6 @@
     },
     {
       "name" : "Cupcake",
-
-
       "pricing" : [
                 "$2.00 per basic cupcake",
                 "$2.25 per Themed Decorated Cupcakes or Toppers",
@@ -32,8 +28,6 @@
     },
       {
       "name" : "Cookies",
-
-
       "pricing" : [
                 "$1.50 per Mini Cookies",
                 "$3.00 per 2-3 Color Cookies",
