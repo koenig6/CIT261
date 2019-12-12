@@ -86,7 +86,7 @@ label:hover{
     transform: perspective(600px) rotateY(0deg);
     transition: transform .5s linear 0s;
     background: rgba(243, 218,247);
-    width: 200px;
+    width: 260px;
     height: 200px;
     border-radius: 7px;
     border-style: solid;
@@ -98,7 +98,7 @@ label:hover{
     transform: perspective(600px) rotateY(180deg);
     transition: transform .5s linear 0s;
     background: orchid;
-    width: 200px;
+    width: 270px;
     height: 200px;
     font-size: 22px;
     border-radius: 7px;
@@ -117,7 +117,7 @@ label:hover{
 
 .flip{
     padding: 10px;
-    height: 275px;
+    height: 440px;
 }
 
 .colorSelect{
