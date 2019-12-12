@@ -52,7 +52,9 @@
                 myPara.textContent = 'Hometown: ' + jsonObj['homeTown'] + ' // Established: ' + jsonObj['established'];
                 header.appendChild(myPara);
             }*/
+
             function showFamily(jsonObj) {
+                console.log('jsonObj: ' + jsonObj);
                 var family = jsonObj['members'];
 
                 for (var i = 0; i < family.length; i++) {
