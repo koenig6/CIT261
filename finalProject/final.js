@@ -48,17 +48,17 @@ function cakes()
 
 function price()
 {
-     document.getElementById("1").innerHTML="6\" Cake (12 servings) - $35<br>8\" Cake (20 servings) - $60<br>10\" Cake (28 servings) -$85<br>12\" Cake (40 servings) - $120<br>Half Sheet Cake (24 servings) - $72<br>Full Sheet Cake (54 Servings) - $150<br>Extra $50 for Carved Cakes ";
+     document.getElementById("2").innerHTML="6\" Cake (12 servings) - $35<br>8\" Cake (20 servings) - $60<br>10\" Cake (28 servings) -$85<br>12\" Cake (40 servings) - $120<br>Half Sheet Cake (24 servings) - $72<br>Full Sheet Cake (54 Servings) - $150<br>Extra $50 for Carved Cakes ";
 
-     document.getElementById("3").innerHTML="Basic Cupcakes  - $2.00 per cupcake<br>Themed Decorated Cupcakes or Toppers - $2.25 per cupcake<br><br>Specialty Cupcakes - $2.50 per cupcake (includes fillings or Cookies and Cream Cupcake, Chocolate Chip Cookie Dough cupcake, German Chocolate Cupcakes, etc.)";
+     document.getElementById("4").innerHTML="Basic Cupcakes  - $2.00 per cupcake<br>Themed Decorated Cupcakes or Toppers - $2.25 per cupcake<br><br>Specialty Cupcakes - $2.50 per cupcake (includes fillings or Cookies and Cream Cupcake, Chocolate Chip Cookie Dough cupcake, German Chocolate Cupcakes, etc.)";
 
-    document.getElementById("5").innerHTML="Mini Cookies - $1.50 per Cookie<br>2-3 Colors - $3.00 per Cookie<br>4+ Colors - $3.20 per Cookie";
+    document.getElementById("6").innerHTML="Mini Cookies - $1.50 per Cookie<br>2-3 Colors - $3.00 per Cookie<br>4+ Colors - $3.20 per Cookie";
 
-     document.getElementById("2").innerHTML=" ";
+     document.getElementById("1").innerHTML=" ";
 
-    document.getElementById("4").innerHTML=" ";
+    document.getElementById("3").innerHTML=" ";
 
-    document.getElementById("6").innerHTML=" ";
+    document.getElementById("5").innerHTML=" ";
 }
 
 function addItem()
