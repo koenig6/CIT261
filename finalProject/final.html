@@ -31,7 +31,7 @@
         </section>
 
         <script>
-            var header = document.querySelector('header');
+            //var header = document.querySelector('header');
             var section = document.querySelector('section');
             var requestURL = 'https://koenig6.github.io/CIT261/finalProject/final.json';
             var request = new XMLHttpRequest();
@@ -40,10 +40,10 @@
             request.send();
             request.onload = function() {
                 var familyMembers = request.response;
-                populateHeader(familyMembers);
+                //populateHeader(familyMembers);
                 showFamily(familyMembers);
             }
-            function populateHeader(jsonObj) {
+            /*function populateHeader(jsonObj) {
                 var myH1 = document.createElement('h1');
                 myH1.textContent = jsonObj['familyName'];
                 header.appendChild(myH1);
@@ -51,21 +51,17 @@
                 var myPara = document.createElement('p');
                 myPara.textContent = 'Hometown: ' + jsonObj['homeTown'] + ' // Established: ' + jsonObj['established'];
                 header.appendChild(myPara);
-            }
+            }*/
             function showFamily(jsonObj) {
                 var family = jsonObj['members'];
 
                 for (var i = 0; i < family.length; i++) {
                     var myArticle = document.createElement('article');
                     var myH2 = document.createElement('h2');
-
-
                     var myPara3 = document.createElement('p');
                     var myList = document.createElement('ul');
 
                     myH2.textContent = family[i].name;
-
-
                     myPara3.textContent = 'Pricing:';
 
                     var pricing = family[i].pricing;
@@ -76,8 +72,6 @@
                     }
 
                     myArticle.appendChild(myH2);
-
-
                     myArticle.appendChild(myPara3);
                     myArticle.appendChild(myList);
 
